@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0" xmlns="http://relaxng.org/ns/structure/1.0" xmlns:dita="http://dita.oasis-open.org/architecture/2005/"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
+    <moduleTitle>Indirector Set</moduleTitle>
+    <headerComment xml:space="preserve">
+=============================================================
+Indirector Set
+
+Contains zero or more indirector topic. Serves as a convenience
+for creating single XML documents that contain multiple indirectors.
+The indirector set does not affect the semantics of the indirectors
+it contains.
+
+Copyright (c) 2014 W. Eliot Kimber
+
+=============================================================
+   </headerComment>
+    <moduleMetadata>
+      <moduleType>topic</moduleType>
+      <moduleShortName>indirectorSet</moduleShortName>
+      <modulePublicIds>
+        <dtdEnt>urn:public:org.dita-community:entities:dtd:indirectorSetMod</dtdEnt>
+        <dtdMod>urn:public:org.dita-community:module:dtd:indirectorSetMod</dtdMod>
+        <rncMod>urn:public:org.dita-community:module:rnc:indirectorSetMod</rncMod>
+        <rngMod>urn:public:org.dita-community:module:rng:indirectorSetMod</rngMod>
+        <xsdMod>urn:public:org.dita-community:module:xsd:indirectorSetMod</xsdMod>
+      </modulePublicIds>
+      <domainsContribution>(topic indirectorSet)</domainsContribution>
+    </moduleMetadata>
+  </moduleDesc>
+  <div>
+    <define name="indirectorSet-info-types" combine="choice">
+      <empty/>
+    </define>
+
+  </div>
+  <div>
+    <a:documentation>ELEMENT TYPE NAME PATTERNS</a:documentation>
+    <define name="indirectorSet">
+      <ref name="indirectorSet.element"/>
+    </define>
+    <define name="indirectorSetBody">
+      <ref name="indirectorSetBody.element"/>
+    </define>
+    <define name="indirectElementRef">
+      <ref name="indirectElementRef.element"/>
+    </define>
+  </div>
+  <div>
+    <a:documentation>ELEMENT TYPE DECLARATIONS</a:documentation>
+
+    <div>
+      <a:documentation> LONG NAME: Indirector </a:documentation>
+      <define name="indirectorSet.content">
+        <ref name="title"/>
+        <optional>
+          <ref name="titlealts"/>
+        </optional>
+        <optional>
+          <ref name="prolog"/>
+        </optional>
+        <zeroOrMore>
+          <ref name="indirectorSet-info-types"/>
+        </zeroOrMore>
+      </define>
+      <define name="indirectorSet.attributes">
+        <attribute name="id">
+          <data type="ID"/>
+        </attribute>
+        <ref name="conref-atts"/>
+        <ref name="select-atts"/>
+        <ref name="localization-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="indirectorSet.element">
+        <element name="indirectorSet" dita:longName="Indirector">
+          <a:documentation>Represents an indirect link to a non-topic element.</a:documentation>
+          <ref name="indirectorSet.attlist"/>
+          <ref name="indirectorSet.content"/>
+        </element>
+      </define>
+      <define name="indirectorSet.attlist" combine="interleave">
+        <ref name="indirectorSet.attributes"/>
+        <ref name="arch-atts"/>
+        <ref name="domains-att"/>
+      </define>
+    </div>
+  </div>
+  <div>
+    <a:documentation>SPECIALIZATION ATTRIBUTE DECLARATIONS</a:documentation>
+    <define name="indirectorSet.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultValue="- topic/topic indirectorSet/indirectorSet "/>
+      </optional>
+    </define>
+ </div>
+</grammar>
