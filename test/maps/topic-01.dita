@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<?xml-model href="urn:pubid:dita-community.org:doctypes:dita:rng:topic+indirector" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <topic id="topic_xlb_nvc_cq">
   <title>Topic 01</title>
   <body>
@@ -9,5 +9,7 @@
       <title>Sample Figure in Topic 01</title>
       <p>This is the figure content.</p>
     </fig>
+    <p>Here is an indirect xref anchor within the brackets:[<indirect-xref-anchor
+      id="anchor-01"/>].</p>
   </body>
 </topic>

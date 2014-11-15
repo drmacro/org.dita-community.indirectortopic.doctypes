@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:vocabularyModuleDesc.rng"
+                         schematypens="http://relaxng.org/ns/structure/1.0"?>
+<grammar xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+  xmlns:dita="http://dita.oasis-open.org/architecture/2005/" 
+  xmlns="http://relaxng.org/ns/structure/1.0">
+  <moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
+    <moduleTitle>DITA Community Indirector Domain</moduleTitle>
+    <headerComment>
+Defines elements for use with the indirector topic type.
+
+Provides the indirect-xref-anchor element, which serves as a target
+for indirect xrefs.
+
+Copyright (c) 2014 Eliot Kimber
+      </headerComment>
+    <moduleMetadata>
+      <moduleType>elementdomain</moduleType>
+      <moduleShortName>indirector-d</moduleShortName>
+      <modulePublicIds>
+        <dtdMod>urn:pubid:dita-community.org:doctypes:dita:modules:indirectorDomain</dtdMod>
+        <dtdEnt>urn:pubid:dita-community.org:doctypes:dita:modules:indirectorDomain:entities</dtdEnt>
+        <xsdMod>urn:pubid:dita-community.org:doctypes:dita:xsd:indirectorDomainMod.xsd</xsdMod>
+        <rncMod>urn:pubid:dita-community.org:doctypes:dita:rnc:indirectorDomainMod.rnc</rncMod>
+        <rngMod>urn:pubid:dita-community.org:doctypes:dita:rng:indirectorDomainMod.rng</rngMod>
+      </modulePublicIds>
+      <domainsContribution>(topic indirector-d)</domainsContribution>
+    </moduleMetadata>
+  </moduleDesc>
+
+  <div>
+    <a:documentation>DOMAIN EXTENSION PATTERNS</a:documentation>
+    
+
+    <define name="indirector-d-ph">
+      <choice>
+        <ref name="indirect-xref-anchor.element"/>
+      </choice>
+    </define>
+
+    <define name="ph" combine="choice">
+      <ref name="indirector-d-ph"/>
+    </define>
+  </div>
+  <div>
+    <a:documentation>ELEMENT TYPE NAME PATTERNS</a:documentation>
+    <define name="indirect-xref-anchor">
+      <ref name="indirect-xref-anchor.element"/>
+    </define>
+  </div>
+  <div>
+    <a:documentation>ELEMENT TYPE DECLARATIONS</a:documentation>
+    <div>
+      <a:documentation>LONG NAME: Indirect XRef Anchor</a:documentation>
+      <define name="indirect-xref-anchor.content">
+        <zeroOrMore>
+          <choice>
+            <ref name="data"/>
+            <ref name="data-about"/>
+          </choice>
+        </zeroOrMore>
+      </define>
+      <define name="indirect-xref-anchor.attributes">
+        <ref name="univ-atts"/>
+        <optional>
+          <attribute name="outputclass"/>
+        </optional>
+      </define>
+      <define name="indirect-xref-anchor.element">
+        <element name="indirect-xref-anchor" dita:longName="Indirect XRef Anchor">
+          <a:documentation>Serves as an anchor for indirect cross references.</a:documentation>
+          <ref name="indirect-xref-anchor.attlist"/>
+          <ref name="indirect-xref-anchor.content"/>
+        </element>
+      </define>
+      <define name="indirect-xref-anchor.attlist" combine="interleave">
+        <ref name="indirect-xref-anchor.attributes"/>
+      </define>
+    </div>    
+        
+    
+      
+        
+  </div>
+  <div>
+    <a:documentation>SPECIALIZATION ATTRIBUTE DECLARATIONS</a:documentation>
+    <define name="indirect-xref-anchor.attlist" combine="interleave">
+      <ref name="global-atts"/>
+      <optional>
+        <attribute name="class" a:defaultValue="+ topic/ph indirector-d/indirect-xref-anchor "/>
+      </optional>
+    </define>
+    
+    
+    
+    
+  </div>
+</grammar>
