@@ -131,7 +131,7 @@ Copyright (c) 2014 W. Eliot Kimber
         <define name="indirectElementRef.content">
           <zeroOrMore>
             <choice>
-              <ref name="indirectElementRef.cnt"/>
+              <ref name="xreftext.cnt"/>
               <ref name="desc"/>
             </choice>
           </zeroOrMore>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"          
+  prefer="public">  
+  <!-- Indirector shell: -->
+  <public publicId="urn:public:org.dita-community:doctype:rng:indirector"
+    uri="indirector.rng"
+  />
+  <system systemId="urn:public:org.dita-community:doctype:rng:indirector"
+    uri="indirector.rng"
+  />
+  <uri name="urn:public:org.dita-community:doctype:rng:indirector"
+    uri="indirector.rng"
+  />
+  <!-- Indirector module: -->
+  <public publicId="urn:public:org.dita-community:module:rng:indirectorMod"
+    uri="indirectorMod.rng"
+  />
+  <system systemId="urn:public:org.dita-community:module:rng:indirectorMod"
+    uri="indirectorMod.rng"
+  />
+  <uri name="urn:public:org.dita-community:module:rng:indirectorMod"
+    uri="indirectorMod.rng"
+  />
+</catalog>  

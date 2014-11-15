@@ -18,33 +18,27 @@ Copyright (c) 2014 W. Eliot Kimber
    </headerComment>
     <moduleMetadata>
       <moduleType>topic</moduleType>
-      <moduleShortName>indirectorSet</moduleShortName>
+      <moduleShortName>indirectorset</moduleShortName>
       <modulePublicIds>
-        <dtdEnt>urn:public:org.dita-community:entities:dtd:indirectorSetMod</dtdEnt>
-        <dtdMod>urn:public:org.dita-community:module:dtd:indirectorSetMod</dtdMod>
-        <rncMod>urn:public:org.dita-community:module:rnc:indirectorSetMod</rncMod>
-        <rngMod>urn:public:org.dita-community:module:rng:indirectorSetMod</rngMod>
-        <xsdMod>urn:public:org.dita-community:module:xsd:indirectorSetMod</xsdMod>
+        <dtdEnt>urn:public:org.dita-community:entities:dtd:indirectorsetMod</dtdEnt>
+        <dtdMod>urn:public:org.dita-community:module:dtd:indirectorsetMod</dtdMod>
+        <rncMod>urn:public:org.dita-community:module:rnc:indirectorsetMod</rncMod>
+        <rngMod>urn:public:org.dita-community:module:rng:indirectorsetMod</rngMod>
+        <xsdMod>urn:public:org.dita-community:module:xsd:indirectorsetMod</xsdMod>
       </modulePublicIds>
-      <domainsContribution>(topic indirectorSet)</domainsContribution>
+      <domainsContribution>(topic indirectorset)</domainsContribution>
     </moduleMetadata>
   </moduleDesc>
   <div>
-    <define name="indirectorSet-info-types" combine="choice">
+    <define name="indirectorset-info-types" combine="choice">
       <empty/>
     </define>
 
   </div>
   <div>
     <a:documentation>ELEMENT TYPE NAME PATTERNS</a:documentation>
-    <define name="indirectorSet">
-      <ref name="indirectorSet.element"/>
-    </define>
-    <define name="indirectorSetBody">
-      <ref name="indirectorSetBody.element"/>
-    </define>
-    <define name="indirectElementRef">
-      <ref name="indirectElementRef.element"/>
+    <define name="indirectorset">
+      <ref name="indirectorset.element"/>
     </define>
   </div>
   <div>
@@ -52,7 +46,7 @@ Copyright (c) 2014 W. Eliot Kimber
 
     <div>
       <a:documentation> LONG NAME: Indirector </a:documentation>
-      <define name="indirectorSet.content">
+      <define name="indirectorset.content">
         <ref name="title"/>
         <optional>
           <ref name="titlealts"/>
@@ -61,10 +55,10 @@ Copyright (c) 2014 W. Eliot Kimber
           <ref name="prolog"/>
         </optional>
         <zeroOrMore>
-          <ref name="indirectorSet-info-types"/>
+          <ref name="indirectorset-info-types"/>
         </zeroOrMore>
       </define>
-      <define name="indirectorSet.attributes">
+      <define name="indirectorset.attributes">
         <attribute name="id">
           <data type="ID"/>
         </attribute>
@@ -75,15 +69,15 @@ Copyright (c) 2014 W. Eliot Kimber
           <attribute name="outputclass"/>
         </optional>
       </define>
-      <define name="indirectorSet.element">
-        <element name="indirectorSet" dita:longName="Indirector">
+      <define name="indirectorset.element">
+        <element name="indirectorset" dita:longName="Indirector">
           <a:documentation>Represents an indirect link to a non-topic element.</a:documentation>
-          <ref name="indirectorSet.attlist"/>
-          <ref name="indirectorSet.content"/>
+          <ref name="indirectorset.attlist"/>
+          <ref name="indirectorset.content"/>
         </element>
       </define>
-      <define name="indirectorSet.attlist" combine="interleave">
-        <ref name="indirectorSet.attributes"/>
+      <define name="indirectorset.attlist" combine="interleave">
+        <ref name="indirectorset.attributes"/>
         <ref name="arch-atts"/>
         <ref name="domains-att"/>
       </define>
@@ -91,10 +85,10 @@ Copyright (c) 2014 W. Eliot Kimber
   </div>
   <div>
     <a:documentation>SPECIALIZATION ATTRIBUTE DECLARATIONS</a:documentation>
-    <define name="indirectorSet.attlist" combine="interleave">
+    <define name="indirectorset.attlist" combine="interleave">
       <ref name="global-atts"/>
       <optional>
-        <attribute name="class" a:defaultValue="- topic/topic indirectorSet/indirectorSet "/>
+        <attribute name="class" a:defaultValue="- topic/topic indirectorset/indirectorset "/>
       </optional>
     </define>
  </div>

@@ -1,0 +1,16 @@
+<!-- 
+  Plugin descriptor for the DITA Community variables domain
+  
+  Copyright (c) 2014 Eliot Kimber
+  Licensed under Apache 2 license
+  
+  -->
+<plugin id="org.dita-community.indirectortopic.doctypes">
+
+  <!-- Doctypes integration: -->
+  <feature extension="dita.specialization.catalog.relative" 
+    value="catalog.xml" 
+    type="file"
+  />
+
+</plugin>

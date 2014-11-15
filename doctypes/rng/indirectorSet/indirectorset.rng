@@ -22,17 +22,17 @@ Copyright (c) 2014 W. Eliot Kimber
          <moduleType>topicshell</moduleType>
          <moduleShortName>Indirector Set</moduleShortName>
          <shellPublicIds>
-            <dtdShell>urn:public:org.dita-community:doctype:dtd:indirectorSet</dtdShell>
-            <rncShell>urn:public:org.dita-community:doctype:rnc:indirectorSet</rncShell>
-            <rngShell>urn:public:org.dita-community:doctype:rng:indirectorSet</rngShell>
-            <xsdShell>urn:public:org.dita-community:doctype:xsd:indirectorSet</xsdShell>
+            <dtdShell>urn:public:org.dita-community:doctype:dtd:indirectorset</dtdShell>
+            <rncShell>urn:public:org.dita-community:doctype:rnc:indirectorset</rncShell>
+            <rngShell>urn:public:org.dita-community:doctype:rng:indirectorset</rngShell>
+            <xsdShell>urn:public:org.dita-community:doctype:xsd:indirectorset</xsdShell>
          </shellPublicIds>
       </moduleMetadata>
   </moduleDesc>
   <div>
       <a:documentation>ROOT ELEMENT DECLARATION</a:documentation>
       <start>
-         <ref name="indirectorSet.element"/>
+         <ref name="indirectorset.element"/>
       </start>
   </div>
   <div>
@@ -63,15 +63,15 @@ Copyright (c) 2014 W. Eliot Kimber
   </div>
   <div>
       <a:documentation>INFO TYPES PATTERNS</a:documentation>
-      <define name="indirectorSet-info-types">
+      <define name="indirectorset-info-types">
          <ref name="indirector"/>
       </define>
   </div>
   <div>
       <a:documentation>MODULE INCLUSIONS</a:documentation>
       <include href="urn:oasis:names:tc:dita:rng:topicMod.rng"/>
-      <include href="indirectorSetMod.rng"/>
-      <include href="indirectorMod.rng"/>
+      <include href="indirectorsetMod.rng"/>
+      <include href="../indirector/indirectorMod.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:deliveryTargetAttDomainMod.rng" dita:since="1.3"/>
       <include href="urn:oasis:names:tc:dita:rng:releaseManagementDomainMod.rng" dita:since="1.3"/>
   </div>
@@ -86,7 +86,7 @@ Copyright (c) 2014 W. Eliot Kimber
                      <except>
                         <name>topic</name>
                         <name>indirector</name>
-                        <name>indirectorSet</name>
+                        <name>indirectorset</name>
                      </except>
                   </anyName>
                   <zeroOrMore>

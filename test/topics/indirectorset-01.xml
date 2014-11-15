@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../doctypes/rng/indirectorSet/indirectorset.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<indirectorset id="none">
+  <title>Indirector Set 01</title>
+  <indirector id="ind-01">
+    <title>Indirector 01</title>
+    <indirectorBody>
+      <indirectElementRef keyref="topic-02/step-01"/>
+    </indirectorBody>
+  </indirector>
+  <indirector id="ind-02">
+    <title>Indirector 02</title>
+    <indirectorBody>
+      <indirectElementRef keyref="topic-03/step-02"/>
+    </indirectorBody>
+  </indirector>
+</indirectorset>

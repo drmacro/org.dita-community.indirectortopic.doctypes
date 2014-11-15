@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+ <title>Indirector Test Map 01</title>
+  <topicgroup>
+    <keydef
+      href="../topics/indirector-01.xml"
+      keys="indirector-01"/>
+    <keydef
+      href="../topics/indirectorset-01.xml#ind-01"
+      keys="indirector-02"/>
+    <keydef
+      href="../topics/indirectorset-01.xml#ind-02"
+      keys="indirector-03"/>
+  </topicgroup>
+  <topicref
+    href="topic-01.dita"
+    keys="topic-01"/>
+  <topicref
+    href="topic-02.dita"
+    keys="topic-02"/>
+  <topicref
+    href="topic-03.dita"
+    keys="topic-03"/>
+  <reltable
+    title="Indirector Test 01">
+    <relheader>
+      <relcolspec>
+        <topicmeta>
+          <navtitle>Anchor Role 01</navtitle>
+        </topicmeta>
+      </relcolspec>
+      <relcolspec>
+        <topicmeta>
+          <navtitle>Anchor Role 02</navtitle>
+        </topicmeta>
+      </relcolspec>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref
+          keyref="indirector-01"/>
+      </relcell>
+      <relcell>
+        <topicref
+          keyref="indirector-02"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref
+          keyref="indirector-02"/>
+      </relcell>
+      <relcell>
+        <topicref
+          keyref="indirector-03"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell/>
+    </relrow>
+  </reltable>
+</map>
