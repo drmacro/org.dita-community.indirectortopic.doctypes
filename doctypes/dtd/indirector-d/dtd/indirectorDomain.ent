@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Defines elements for use with the indirector topic type.      -->
+<!-- Provides the indirect-xref-anchor element, which serves as a target -->
+<!-- for indirect xrefs.                                           -->
+<!-- Copyright (c) 2014 Eliot Kimber                               -->
+<!--                                                               -->
+
+<!-- ============================================================= -->
+<!--                    ELEMENT EXTENSION ENTITY DECLARATIONS      -->
+<!-- ============================================================= -->
+
+<!ENTITY % indirector-d-ph
+  "indirect-xref-anchor"
+>
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ENTITY DECLARATION                  -->
+<!-- ============================================================= -->
+
+<!ENTITY indirector-d-att
+  "(topic indirector-d)"
+>
+
+<!-- ================ End DITA Community Indirector Domain ================== -->
+ 

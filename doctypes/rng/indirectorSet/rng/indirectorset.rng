@@ -4,24 +4,15 @@
          xmlns:dita="http://dita.oasis-open.org/architecture/2005/"
          xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">
   <moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
-      <moduleTitle>Indirector Topic Shell</moduleTitle>
+      <moduleTitle>Indirector Set Shell</moduleTitle>
       <headerComment xml:space="preserve">
 =============================================================
-Indirector Topic
+Indirector Set
 
-Represents an indirect link to a non-topic element. 
-
-The body of topic contains one or more &lt;indirectElementRef&gt;
-elements. Each indirectElementRef must point to a non-topic
-element that is the ultimate target of any reference to the 
-indirector topic.
-
-When there are multiple indirectElementRef elements, renderers
-may treat each reference as establishing a separate link from
-the initial reference to the indirector topic or they may 
-produce a deliverable-specific way of choosing among the
-the target elements (e.g., a simple list of links, a dropdown
-list from which the user chooses one, etc.).
+Contains zero or more indirector topic. Serves as a convenience
+for creating single XML documents that contain multiple indirectors.
+The indirector set does not affect the semantics of the indirectors
+it contains.
 
 Copyright (c) 2014 W. Eliot Kimber
 
@@ -29,19 +20,19 @@ Copyright (c) 2014 W. Eliot Kimber
   </headerComment>
       <moduleMetadata>
          <moduleType>topicshell</moduleType>
-         <moduleShortName>Indirector Topic</moduleShortName>
+         <moduleShortName>Indirector Set</moduleShortName>
          <shellPublicIds>
-            <dtdShell>urn:public:org.dita-community:doctype:dtd:indirector</dtdShell>
-            <rncShell>urn:public:org.dita-community:doctype:rnc:indirector</rncShell>
-            <rngShell>urn:public:org.dita-community:doctype:rng:indirector</rngShell>
-            <xsdShell>urn:public:org.dita-community:doctype:xsd:indirector</xsdShell>
+            <dtdShell>urn:public:org.dita-community:doctype:dtd:indirectorset</dtdShell>
+            <rncShell>urn:public:org.dita-community:doctype:rnc:indirectorset</rncShell>
+            <rngShell>urn:public:org.dita-community:doctype:rng:indirectorset</rngShell>
+            <xsdShell>urn:public:org.dita-community:doctype:xsd:indirectorset</xsdShell>
          </shellPublicIds>
       </moduleMetadata>
   </moduleDesc>
   <div>
       <a:documentation>ROOT ELEMENT DECLARATION</a:documentation>
       <start>
-         <ref name="indirector.element"/>
+         <ref name="indirectorset.element"/>
       </start>
   </div>
   <div>
@@ -72,17 +63,18 @@ Copyright (c) 2014 W. Eliot Kimber
   </div>
   <div>
       <a:documentation>INFO TYPES PATTERNS</a:documentation>
-      <define name="indirector-info-types">
-         <empty/>
+      <define name="indirectorset-info-types">
+         <ref name="indirector"/>
       </define>
   </div>
   <div>
       <a:documentation>MODULE INCLUSIONS</a:documentation>
       <include href="urn:oasis:names:tc:dita:rng:topicMod.rng"/>
-      <include href="indirectorMod.rng"/>
+      <include href="indirectorsetMod.rng"/>
+      <include href="../../indirector/rng/indirectorMod.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:deliveryTargetAttDomainMod.rng" dita:since="1.3"/>
       <include href="urn:oasis:names:tc:dita:rng:releaseManagementDomainMod.rng" dita:since="1.3"/>
-      <include href="../indirector-d/indirectorDomainMod.rng"/>
+      <include href="../../indirector-d/rng/indirectorDomainMod.rng"/>
   </div>
   <div>
       <a:documentation>ID-DEFINING-ELEMENT OVERRIDES</a:documentation>
@@ -95,6 +87,7 @@ Copyright (c) 2014 W. Eliot Kimber
                      <except>
                         <name>topic</name>
                         <name>indirector</name>
+                        <name>indirectorset</name>
                      </except>
                   </anyName>
                   <zeroOrMore>

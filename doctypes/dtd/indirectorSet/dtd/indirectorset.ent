@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================= -->
+<!-- Indirector Set                                                -->
+<!-- Contains zero or more indirector topic. Serves as a convenience -->
+<!-- for creating single XML documents that contain multiple indirectors. -->
+<!-- The indirector set does not affect the semantics of the indirectors -->
+<!-- it contains.                                                  -->
+<!-- Copyright (c) 2014 W. Eliot Kimber                            -->
+<!-- ============================================================= -->
+<!--                                                               -->
+
+<!-- ============================================================= -->
+<!--                    DOMAIN ENTITY DECLARATION                  -->
+<!-- ============================================================= -->
+
+<!ENTITY indirectorset-att
+  "(topic indirectorset)"
+>
+
+<!-- ================ End Indirector Set ================== -->
+ 
