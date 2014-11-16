@@ -100,8 +100,14 @@ Copyright (c) 2014 W. Eliot Kimber
     <div>
       <a:documentation> LONG NAME: Indirector Body </a:documentation>
       <define name="indirectorBody.content">
-        <zeroOrMore>
+        <optional>
           <ref name="indirectElementRef"/>
+        </optional>
+        <zeroOrMore>
+          <choice>
+            <ref name="data"/>
+            <ref name="data-about"/>
+          </choice>
         </zeroOrMore>
       </define>
       <define name="indirectorBody.attributes">

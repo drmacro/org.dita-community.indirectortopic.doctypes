@@ -62,7 +62,9 @@
 
 <!--                    LONG NAME: Indirector Body                 -->
 <!ENTITY % indirectorBody.content
-                       "(%indirectElementRef;)*"
+                       "((%indirectElementRef;)?,
+                         (%data; |
+                          %data-about;)*)"
 >
 <!ENTITY % indirectorBody.attributes
               "%id-atts;
