@@ -21,7 +21,7 @@
 <!-- ============================================================= -->
 
 <!ENTITY % indirectorset-info-types
-              "no-topic-nesting"
+              "indirector"
 >
 <!--                    LONG NAME: Indirector                      -->
 <!ENTITY % indirectorset.content

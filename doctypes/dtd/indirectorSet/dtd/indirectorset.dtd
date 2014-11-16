@@ -75,10 +75,8 @@
 <!--                    TOPIC NESTING OVERRIDE                     -->
 <!-- ============================================================= -->
 
-
 <!ENTITY % indirectorset-info-types
-"no-topic-nesting"
-
+              "indirector"
 >
 
 <!ENTITY % indirector-info-types

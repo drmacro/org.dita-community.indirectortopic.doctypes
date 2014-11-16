@@ -31,7 +31,7 @@ Copyright (c) 2014 W. Eliot Kimber
   </moduleDesc>
   <div>
     <define name="indirectorset-info-types" combine="choice">
-      <empty/>
+      <ref name="indirector.element"/>
     </define>
 
   </div>
