@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog"          
-  prefer="public">  
-  <nextCatalog catalog="rng/catalog.xml"/>
-</catalog>  
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<!--Indirector Topic Shell-->
+
+   <group><!-- System ID (URL) catalog entries -->
+      <system systemId="urn:public:org.dita-community:doctype:rng:indirector"
+              uri="rng/indirector.rng"/>
+      <system systemId="urn:public:org.dita-community:doctype:rng:indirector"
+              uri="rng/indirector.rng"/>
+      <system systemId="urn:public:org.dita-community:module:rng:indirectorMod"
+              uri="rng/indirectorMod.rng"/>
+      <system systemId="urn:public:org.dita-community:module:rng:indirectorMod"
+              uri="rng/indirectorMod.rng"/>
+   </group>
+   <group><!-- Public ID (URN) catalog entries -->
+      <uri name="urn:public:org.dita-community:doctype:rng:indirector"
+           uri="rng/indirector.rng"/>
+      <uri name="urn:public:org.dita-community:doctype:rng:indirector"
+           uri="rng/indirector.rng"/>
+      <uri name="urn:public:org.dita-community:module:rng:indirectorMod"
+           uri="rng/indirectorMod.rng"/>
+      <uri name="urn:public:org.dita-community:module:rng:indirectorMod"
+           uri="rng/indirectorMod.rng"/>
+   </group>
+</catalog>

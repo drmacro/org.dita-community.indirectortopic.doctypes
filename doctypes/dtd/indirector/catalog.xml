@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<!--Indirector Topic Shell-->
+
+   <public publicId="urn:public:org.dita-community:doctype:dtd:indirector"
+           uri="dtd/indirector.dtd"/>
+   <public publicId="urn:public:org.dita-community:doctype:dtd:indirector"
+           uri="dtd/indirector.dtd"/>
+   <public publicId="urn:public:org.dita-community:entities:dtd:indirectorMod"
+           uri="dtd/indirector.ent"/>
+   <public publicId="urn:public:org.dita-community:entities:dtd:indirectorMod"
+           uri="dtd/indirector.ent"/>
+   <public publicId="urn:public:org.dita-community:module:dtd:indirectorMod"
+           uri="dtd/indirector.mod"/>
+   <public publicId="urn:public:org.dita-community:module:dtd:indirectorMod"
+           uri="dtd/indirector.mod"/>
+</catalog>

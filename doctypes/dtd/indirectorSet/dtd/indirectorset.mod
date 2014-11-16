@@ -26,13 +26,9 @@
 <!--                    LONG NAME: Indirector                      -->
 <!ENTITY % indirectorset.content
                        "((%title;),
-                         (%titlealts;,
-)?,
-                         (%prolog;,
-)?,
-                         (%indirectorset-info-types;,
-)*,
-)"
+                         (%titlealts;)?,
+                         (%prolog;)?,
+                         (%indirectorset-info-types;)*)"
 >
 <!ENTITY % indirectorset.attributes
               "id
@@ -43,9 +39,7 @@
                %localization-atts;
                outputclass
                           CDATA
-                                    #IMPLIED
-
-"
+                                    #IMPLIED"
 >
 <!ELEMENT  indirectorset %indirectorset.content;>
 <!ATTLIST  indirectorset %indirectorset.attributes;

@@ -19,16 +19,13 @@
 <!--                    LONG NAME: Indirect XRef Anchor            -->
 <!ENTITY % indirect-xref-anchor.content
                        "(%data; |
-                         %data-about;)*,
-"
+                         %data-about;)*"
 >
 <!ENTITY % indirect-xref-anchor.attributes
               "%univ-atts;
                outputclass
                           CDATA
-                                    #IMPLIED
-
-"
+                                    #IMPLIED"
 >
 <!ELEMENT  indirect-xref-anchor %indirect-xref-anchor.content;>
 <!ATTLIST  indirect-xref-anchor %indirect-xref-anchor.attributes;>

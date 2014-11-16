@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE indirector PUBLIC "urn:public:org.dita-community:doctype:dtd:indirector" "indirector.dtd">
+<indirector id="none">
+  <title>Indirector 01</title>
+  <indirectorBody>
+    <indirectElementRef keyref="topic-01/fig-01"/>
+  </indirectorBody>
+</indirector>

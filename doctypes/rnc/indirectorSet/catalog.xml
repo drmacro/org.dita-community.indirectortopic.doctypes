@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<!--Indirector Set Shell-->
+
+   <group><!-- System ID (URL) catalog entries -->
+      <system systemId="urn:public:org.dita-community:doctype:rnc:indirectorset"
+              uri="rnc/indirectorset.rnc"/>
+      <system systemId="urn:public:org.dita-community:doctype:rnc:indirectorset"
+              uri="rnc/indirectorset.rnc"/>
+      <system systemId="urn:public:org.dita-community:module:rnc:indirectorsetMod"
+              uri="rnc/indirectorsetMod.rnc"/>
+      <system systemId="urn:public:org.dita-community:module:rnc:indirectorsetMod"
+              uri="rnc/indirectorsetMod.rnc"/>
+   </group>
+   <group><!-- Public ID (URN) catalog entries -->
+      <uri name="urn:public:org.dita-community:doctype:rnc:indirectorset"
+           uri="rnc/indirectorset.rnc"/>
+      <uri name="urn:public:org.dita-community:doctype:rnc:indirectorset"
+           uri="rnc/indirectorset.rnc"/>
+      <uri name="urn:public:org.dita-community:module:rnc:indirectorsetMod"
+           uri="rnc/indirectorsetMod.rnc"/>
+      <uri name="urn:public:org.dita-community:module:rnc:indirectorsetMod"
+           uri="rnc/indirectorsetMod.rnc"/>
+   </group>
+</catalog>

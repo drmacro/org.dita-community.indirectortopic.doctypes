@@ -36,13 +36,9 @@
 <!--                    LONG NAME: Indirector                      -->
 <!ENTITY % indirector.content
                        "((%title;),
-                         (%titlealts;,
-)?,
-                         (%prolog;,
-)?,
-                         (%indirectorBody;,
-)?,
-)"
+                         (%titlealts;)?,
+                         (%prolog;)?,
+                         (%indirectorBody;)?)"
 >
 <!ENTITY % indirector.attributes
               "id
@@ -53,9 +49,7 @@
                %localization-atts;
                outputclass
                           CDATA
-                                    #IMPLIED
-
-"
+                                    #IMPLIED"
 >
 <!ELEMENT  indirector %indirector.content;>
 <!ATTLIST  indirector %indirector.attributes;
@@ -68,9 +62,7 @@
 
 <!--                    LONG NAME: Indirector Body                 -->
 <!ENTITY % indirectorBody.content
-                       "(%indirectElementRef;,
-)*,
-"
+                       "(%indirectElementRef;)*"
 >
 <!ENTITY % indirectorBody.attributes
               "%id-atts;
@@ -78,13 +70,10 @@
                base
                           CDATA
                                     #IMPLIED
-
                %base-attribute-extensions;
                outputclass
                           CDATA
-                                    #IMPLIED
-
-"
+                                    #IMPLIED"
 >
 <!ELEMENT  indirectorBody %indirectorBody.content;>
 <!ATTLIST  indirectorBody %indirectorBody.attributes;>
@@ -93,24 +82,19 @@
 <!--                    LONG NAME: Indirect Element Ref            -->
 <!ENTITY % indirectElementRef.content
                        "(%xreftext.cnt; |
-                         %desc;)*,
-"
+                         %desc;)*"
 >
 <!ENTITY % indirectElementRef.attributes
               "keyref
                           CDATA
                                     #IMPLIED
-
                type
                           CDATA
                                     #IMPLIED
-
                %univ-atts;
                outputclass
                           CDATA
-                                    #IMPLIED
-
-"
+                                    #IMPLIED"
 >
 <!ELEMENT  indirectElementRef %indirectElementRef.content;>
 <!ATTLIST  indirectElementRef %indirectElementRef.attributes;>

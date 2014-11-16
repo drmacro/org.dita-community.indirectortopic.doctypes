@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<!--DITA Community Indirector-Aware Topic Shell-->
+
+   <group><!-- System ID (URL) catalog entries -->
+      <system systemId="urn:pubid:dita-community.org:doctypes:dita:rnc:topic+indirector"
+              uri="rnc/topic.rnc"/>
+      <system systemId="urn:pubid:dita-community.org:doctypes:dita:rnc:topic+indirector"
+              uri="rnc/topic.rnc"/>
+   </group>
+   <group><!-- Public ID (URN) catalog entries -->
+      <uri name="urn:pubid:dita-community.org:doctypes:dita:rnc:topic+indirector"
+           uri="rnc/topic.rnc"/>
+      <uri name="urn:pubid:dita-community.org:doctypes:dita:rnc:topic+indirector"
+           uri="rnc/topic.rnc"/>
+   </group>
+</catalog>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<!--Indirector Set Shell-->
+
+   <public publicId="urn:public:org.dita-community:doctype:dtd:indirectorset"
+           uri="dtd/indirectorset.dtd"/>
+   <public publicId="urn:public:org.dita-community:doctype:dtd:indirectorset"
+           uri="dtd/indirectorset.dtd"/>
+   <public publicId="urn:public:org.dita-community:entities:dtd:indirectorsetMod"
+           uri="dtd/indirectorset.ent"/>
+   <public publicId="urn:public:org.dita-community:entities:dtd:indirectorsetMod"
+           uri="dtd/indirectorset.ent"/>
+   <public publicId="urn:public:org.dita-community:module:dtd:indirectorsetMod"
+           uri="dtd/indirectorset.mod"/>
+   <public publicId="urn:public:org.dita-community:module:dtd:indirectorsetMod"
+           uri="dtd/indirectorset.mod"/>
+</catalog>

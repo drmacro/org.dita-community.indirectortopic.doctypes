@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<!--DITA Community Indirector Domain-->
+
+   <public publicId="urn:pubid:dita-community.org:doctypes:dita:modules:indirectorDomain"
+           uri="dtd/indirectorDomain.mod"/>
+   <public publicId="urn:pubid:dita-community.org:doctypes:dita:modules:indirectorDomain"
+           uri="dtd/indirectorDomain.mod"/>
+   <public publicId="urn:pubid:dita-community.org:doctypes:dita:modules:indirectorDomain:entities"
+           uri="dtd/indirectorDomain.ent"/>
+   <public publicId="urn:pubid:dita-community.org:doctypes:dita:modules:indirectorDomain:entities"
+           uri="dtd/indirectorDomain.ent"/>
+</catalog>

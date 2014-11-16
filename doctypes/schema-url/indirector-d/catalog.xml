@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<!--DITA Community Indirector Domain-->
+
+   <group><!-- System ID (URL) catalog entries -->
+      <system systemId="urn:pubid:dita-community.org:doctypes:dita:xsd:indirectorDomainMod.xsd"
+              uri="xsd/indirectorDomainMod.xsd"/>
+      <system systemId="urn:pubid:dita-community.org:doctypes:dita:xsd:indirectorDomainMod.xsd"
+              uri="xsd/indirectorDomainMod.xsd"/>
+   </group>
+   <group><!-- Public ID (URN) catalog entries -->
+      <uri name="urn:pubid:dita-community.org:doctypes:dita:xsd:indirectorDomainMod.xsd"
+           uri="xsd/indirectorDomainMod.xsd"/>
+      <uri name="urn:pubid:dita-community.org:doctypes:dita:xsd:indirectorDomainMod.xsd"
+           uri="xsd/indirectorDomainMod.xsd"/>
+   </group>
+</catalog>

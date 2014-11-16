@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<!--Indirector Set Shell-->
+
+   <group><!-- System ID (URL) catalog entries -->
+      <system systemId="urn:public:org.dita-community:doctype:xsd:indirectorset"
+              uri="xsd/indirectorset.xsd"/>
+      <system systemId="urn:public:org.dita-community:doctype:xsd:indirectorset"
+              uri="xsd/indirectorset.xsd"/>
+      <system systemId="urn:public:org.dita-community:module:xsd:indirectorsetMod"
+              uri="xsd/indirectorsetMod.xsd"/>
+      <system systemId="urn:public:org.dita-community:module:xsd:indirectorsetMod"
+              uri="xsd/indirectorsetMod.xsd"/>
+   </group>
+   <group><!-- Public ID (URN) catalog entries -->
+      <uri name="urn:public:org.dita-community:doctype:xsd:indirectorset"
+           uri="xsd/indirectorset.xsd"/>
+      <uri name="urn:public:org.dita-community:doctype:xsd:indirectorset"
+           uri="xsd/indirectorset.xsd"/>
+      <uri name="urn:public:org.dita-community:module:xsd:indirectorsetMod"
+           uri="xsd/indirectorsetMod.xsd"/>
+      <uri name="urn:public:org.dita-community:module:xsd:indirectorsetMod"
+           uri="xsd/indirectorsetMod.xsd"/>
+   </group>
+</catalog>

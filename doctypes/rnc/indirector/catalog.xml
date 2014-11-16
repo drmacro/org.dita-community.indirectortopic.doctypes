@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+<!--Indirector Topic Shell-->
+
+   <group><!-- System ID (URL) catalog entries -->
+      <system systemId="urn:public:org.dita-community:doctype:rnc:indirector"
+              uri="rnc/indirector.rnc"/>
+      <system systemId="urn:public:org.dita-community:doctype:rnc:indirector"
+              uri="rnc/indirector.rnc"/>
+      <system systemId="urn:public:org.dita-community:module:rnc:indirectorMod"
+              uri="rnc/indirectorMod.rnc"/>
+      <system systemId="urn:public:org.dita-community:module:rnc:indirectorMod"
+              uri="rnc/indirectorMod.rnc"/>
+   </group>
+   <group><!-- Public ID (URN) catalog entries -->
+      <uri name="urn:public:org.dita-community:doctype:rnc:indirector"
+           uri="rnc/indirector.rnc"/>
+      <uri name="urn:public:org.dita-community:doctype:rnc:indirector"
+           uri="rnc/indirector.rnc"/>
+      <uri name="urn:public:org.dita-community:module:rnc:indirectorMod"
+           uri="rnc/indirectorMod.rnc"/>
+      <uri name="urn:public:org.dita-community:module:rnc:indirectorMod"
+           uri="rnc/indirectorMod.rnc"/>
+   </group>
+</catalog>
