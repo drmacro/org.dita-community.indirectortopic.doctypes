@@ -5,13 +5,13 @@
   <indirector id="ind-01">
     <title>Indirector 01</title>
     <indirectorBody>
-      <indirectElementRef keyref="topic-02/step-01"/>
+      <indirectElementRef keyref="task-02/step-01"/>
     </indirectorBody>
   </indirector>
   <indirector id="ind-02">
     <title>Indirector 02</title>
     <indirectorBody>
-      <indirectElementRef keyref="topic-03/step-02"/>
+      <indirectElementRef keyref="task-03/step-02"/>
     </indirectorBody>
   </indirector>
 </indirectorset>

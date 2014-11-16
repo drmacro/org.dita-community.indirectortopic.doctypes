@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "urn:pubid:dita-community.org:doctypes:dita:topic+indirector" "topic+indirector.dtd" >
+<topic id="topic_xlb_nvc_cq">
+  <title>Topic 01</title>
+  <body>
+    <p>This is topic 01.</p>
+    <fig
+      id="fig-01">
+      <title>Sample Figure in Topic 01</title>
+      <p>This is the figure content.</p>
+    </fig>
+    <p>Here is an indirect xref anchor within the brackets:[<indirect-xref-anchor
+      id="anchor-01"/>].</p>
+  </body>
+</topic>

@@ -4,24 +4,24 @@
  <title>Indirector Test Map 01</title>
   <topicgroup>
     <keydef
-      href="../topics/indirector-01.xml"
+      href="../topics/indirector-01-dtd.xml"
       keys="indirector-01"/>
     <keydef
-      href="../topics/indirectorset-01.xml#ind-01"
+      href="../topics/indirectorset-01-dtd.xml#ind-01"
       keys="indirector-02"/>
     <keydef
-      href="../topics/indirectorset-01.xml#ind-02"
+      href="../topics/indirectorset-01-dtd.xml#ind-02"
       keys="indirector-03"/>
   </topicgroup>
   <topicref
-    href="topic-01.dita"
+    href="../topics/topic-01-dtd.dita"
     keys="topic-01"/>
   <topicref
-    href="topic-02.dita"
-    keys="topic-02"/>
+    href="../topics/task-02-dtd.dita"
+    keys="task-02"/>
   <topicref
-    href="topic-03.dita"
-    keys="topic-03"/>
+    href="../topics/task-03-dtd.dita"
+    keys="task-03"/>
   <reltable
     title="Indirector Test 01">
     <relheader>
