@@ -62,15 +62,13 @@ Copyright (c) 2014 W. Eliot Kimber
       </define>
   </div>
   <div>
-      <a:documentation>INFO TYPES PATTERNS</a:documentation>
-      <define name="indirectorset-info-types">
-         <ref name="indirector"/>
-      </define>
-  </div>
-  <div>
       <a:documentation>MODULE INCLUSIONS</a:documentation>
       <include href="urn:oasis:names:tc:dita:rng:topicMod.rng"/>
-      <include href="indirectorsetMod.rng"/>
+      <include href="indirectorsetMod.rng">
+        <define name="indirectorset-info-types">
+           <ref name="indirector"/>
+        </define>
+      </include>
       <include href="../../indirector/rng/indirectorMod.rng"/>
       <include href="urn:oasis:names:tc:dita:rng:deliveryTargetAttDomainMod.rng" dita:since="1.3"/>
       <include href="urn:oasis:names:tc:dita:rng:releaseManagementDomainMod.rng" dita:since="1.3"/>

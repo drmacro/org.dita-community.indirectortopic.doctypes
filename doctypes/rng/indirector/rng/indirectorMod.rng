@@ -42,7 +42,6 @@ Copyright (c) 2014 W. Eliot Kimber
     <define name="indirector-info-types" combine="choice">
       <empty/>
     </define>
-
   </div>
   <div>
     <a:documentation>ELEMENT TYPE NAME PATTERNS</a:documentation>
