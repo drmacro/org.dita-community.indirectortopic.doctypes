@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Machinery Task//EN" "task.dtd">
+<!DOCTYPE task PUBLIC "urn:pubid:dita-community.org:doctypes:dita:task+indirector" "task.dtd">
 <task id="task_yms_xvc_cq">
-    <title>Topic 03</title>
+    <title>Task 03</title>
     <shortdesc>This is topic 03, a short task.</shortdesc>
     <taskbody>
         <context>
@@ -15,6 +15,7 @@
       <step
         id="step-02">
         <cmd>Do another thing...</cmd>
+        <info>See <indirect-xref-anchor id="anchor-01">this step</indirect-xref-anchor> for some reason.</info>
       </step>
       <step
         id="step-03">

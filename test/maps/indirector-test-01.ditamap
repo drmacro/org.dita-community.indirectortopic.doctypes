@@ -7,11 +7,14 @@
       href="../topics/indirector-01-dtd.xml"
       keys="indirector-01"/>
     <keydef
-      href="../topics/indirectorset-01-dtd.xml#ind-01"
+      href="../topics/indirectorset-01-dtd.xml#ind-02"
       keys="indirector-02"/>
     <keydef
-      href="../topics/indirectorset-01-dtd.xml#ind-02"
+      href="../topics/indirectorset-01-dtd.xml#ind-03"
       keys="indirector-03"/>
+    <keydef
+      href="../topics/indirector-03-dtd.xml"
+      keys="indirector-04"/>
   </topicgroup>
   <topicref
     href="../topics/topic-01-dtd.dita"

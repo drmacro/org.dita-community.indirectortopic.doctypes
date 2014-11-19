@@ -21,7 +21,7 @@
 <!-- ============================================================= -->
 
 <!ENTITY % indirectorset-info-types
-              "indirector"
+  "indirector.element"
 >
 <!--                    LONG NAME: Indirector                      -->
 <!ENTITY % indirectorset.content

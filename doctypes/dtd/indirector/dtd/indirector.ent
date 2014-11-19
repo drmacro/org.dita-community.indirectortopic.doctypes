@@ -6,12 +6,11 @@
 <!-- elements. Each indirectElementRef must point to a non-topic   -->
 <!-- element that is the ultimate target of any reference to the   -->
 <!-- indirector topic.                                             -->
-<!-- When there are multiple indirectElementRef elements, renderers -->
-<!-- may treat each reference as establishing a separate link from -->
-<!-- the initial reference to the indirector topic or they may     -->
-<!-- produce a deliverable-specific way of choosing among the      -->
-<!-- the target elements (e.g., a simple list of links, a dropdown -->
-<!-- list from which the user chooses one, etc.).                  -->
+<!-- When there are multiple indirectElementRef elements, they     -->
+<!-- should have distinct applicability conditions. When more than -->
+<!-- one indirector is present following filtering or effective    -->
+<!-- per the current filtering conditions, processors should use the first one -->
+<!-- in document order.                                            -->
 <!-- Copyright (c) 2014 W. Eliot Kimber                            -->
 <!-- ============================================================= -->
 <!--                                                               -->

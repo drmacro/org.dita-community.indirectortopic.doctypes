@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- ============================================================= -->
-<!-- DITA Community Sample Indirector-Aware Shell                  -->
+<!-- DITA Community Sample Indirector-Aware Task Shell             -->
 <!-- Integrates the indirector-d domain in addition to full set    -->
 <!-- of technical communication domains and topic types.           -->
 <!-- ============================================================= -->
@@ -8,6 +8,11 @@
 <!-- ============================================================= -->
 <!--              TOPIC ENTITY DECLARATIONS                        -->
 <!-- ============================================================= -->
+
+<!ENTITY % task-dec
+  PUBLIC "-//OASIS//ENTITIES DITA 1.3 Task//EN"
+         "../../../../../../../../../Applications/oxygen/frameworks/dita/DITA-OT/plugins/org.oasis-open.dita.dita13.doctypes/doctypes/dtd/technicalContent/dtd/task.ent"
+>%task-dec;
 
 <!-- ============================================================= -->
 <!--             DOMAIN ENTITY DECLARATIONS                        -->
@@ -170,8 +175,8 @@
 <!--                    TOPIC NESTING OVERRIDE                     -->
 <!-- ============================================================= -->
 
-<!ENTITY % topic-info-types
-  "topic.element"
+<!ENTITY % task-info-types
+  "task.element"
 >
 
 <!-- ============================================================= -->
@@ -179,7 +184,8 @@
 <!-- ============================================================= -->
 
 <!ENTITY included-domains
-                          "&abbrev-d-att;
+                          "&task-att;
+                           &abbrev-d-att;
                            &deliveryTargetAtt-d-att;
                            &equation-d-att;
                            &hazard-d-att;
@@ -195,12 +201,18 @@
                            &ut-d-att;
                            &xml-d-att;
                            &indirector-d-att;
+                           &taskbody-constraints;
   "
 >
 
 <!-- ============================================================= -->
 <!--                    CONTENT CONSTRAINT INTEGRATION             -->
 <!-- ============================================================= -->
+
+<!ENTITY % strictTaskbody-def
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.3 Strict Taskbody Constraint//EN"
+         "urn:oasis:names:tc:dita:rng:strictTaskbodyConstraintMod.rng:1.mod"
+>%strictTaskbody-def;
 
 <!-- ============================================================= -->
 <!--                    TOPIC ELEMENT INTEGRATION                  -->
@@ -210,6 +222,11 @@
   PUBLIC "-//OASIS//ELEMENTS DITA 1.3 Topic//EN"
          "urn:oasis:names:tc:dita:rng:topic.mod"
 >%topic-type;
+
+<!ENTITY % task-type
+  PUBLIC "-//OASIS//ELEMENTS DITA 1.3 Task//EN"
+         "../../../../../../../../../Applications/oxygen/frameworks/dita/DITA-OT/plugins/org.oasis-open.dita.dita13.doctypes/doctypes/dtd/technicalContent/dtd/task.mod"
+>%task-type;
 
 <!-- ============================================================= -->
 <!--                    DOMAIN ELEMENT INTEGRATION                 -->

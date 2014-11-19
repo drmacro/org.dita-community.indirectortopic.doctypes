@@ -76,7 +76,7 @@
 <!-- ============================================================= -->
 
 <!ENTITY % indirectorset-info-types
-              "%indirector;"
+  "indirector.element"
 >
 
 <!ENTITY % indirector-info-types

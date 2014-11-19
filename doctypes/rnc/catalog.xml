@@ -3,5 +3,6 @@
    <nextCatalog catalog="indirector/catalog.xml"/>
    <nextCatalog catalog="indirector-d/catalog.xml"/>
    <nextCatalog catalog="indirectorSet/catalog.xml"/>
+   <nextCatalog catalog="task/catalog.xml"/>
    <nextCatalog catalog="topic/catalog.xml"/>
 </catalog>

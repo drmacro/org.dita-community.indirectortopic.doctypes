@@ -2,14 +2,14 @@
 <!DOCTYPE indirectorset PUBLIC "urn:public:org.dita-community:doctype:dtd:indirectorset" "indirectorset.dtd">
 <indirectorset id="none">
   <title>Indirector Set 01</title>
-  <indirector id="ind-01">
-    <title>Indirector 01</title>
+  <indirector id="ind-02">
+    <title>Indirector 02</title>
     <indirectorBody>
       <indirectElementRef keyref="task-02/step-01"/>
     </indirectorBody>
   </indirector>
-  <indirector id="ind-02">
-    <title>Indirector 02</title>
+  <indirector id="ind-03">
+    <title>Indirector 03</title>
     <indirectorBody>
       <indirectElementRef keyref="task-03/step-02"/>
     </indirectorBody>
