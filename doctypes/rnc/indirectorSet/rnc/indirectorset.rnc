@@ -1,0 +1,37 @@
+# 
+# =============================================================
+# Indirector Set
+# 
+# Contains zero or more indirector topic. Serves as a convenience
+# for creating single XML documents that contain multiple indirectors.
+# The indirector set does not affect the semantics of the indirectors
+# it contains.
+# 
+# Copyright (c) 2014 W. Eliot Kimber
+# 
+# =============================================================
+#   
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+namespace dita = "http://dita.oasis-open.org/architecture/2005/"
+
+div {
+start = indirectorset.element
+
+}
+div {
+domains-att &= 
+attribute domains { text}?
+}
+div {
+include "urn:oasis:names:tc:dita:rng:topicMod.rnc"
+include "indirectorsetMod.rnc"
+include "../../indirector/rnc/indirectorMod.rnc"
+include "urn:oasis:names:tc:dita:rng:deliveryTargetAttDomainMod.rnc"
+include "urn:oasis:names:tc:dita:rng:releaseManagementDomainMod.rnc"
+include "../../indirector-d/rnc/indirectorDomainMod.rnc"
+}
+div {
+any = (idElements | 
+element  * - (topic | indirector | indirectorset) {
+attribute  * { text}*, any} |  text )*
+}

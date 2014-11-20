@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--=============================================================-->
+<!--Indirector Topic                                             -->
+<!--Represents an indirect link to a non-topic element.          -->
+<!--The body of topic contains one or more <indirectElementRef>  -->
+<!--elements. Each indirectElementRef must point to a non-topic  -->
+<!--element that is the ultimate target of any reference to the  -->
+<!--indirector topic.                                            -->
+<!--When there are multiple indirectElementRef elements, renderers-->
+<!--may treat each reference as establishing a separate link from-->
+<!--the initial reference to the indirector topic or they may    -->
+<!--produce a deliverable-specific way of choosing among the     -->
+<!--the target elements (e.g., a simple list of links, a dropdown-->
+<!--list from which the user chooses one, etc.).                 -->
+<!--Copyright (c) 2014 W. Eliot Kimber                           -->
+<!--=============================================================-->
+<!--                                                             -->
+<xs:schema xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+<!-- ================ TOPIC DOMAINS ===================== -->
+   <xs:include schemaLocation="../../indirector-d/xsd/indirectorDomainMod.xsd"/>
+
+   <!-- ================ GROUP DEFINITIONS ===================== -->

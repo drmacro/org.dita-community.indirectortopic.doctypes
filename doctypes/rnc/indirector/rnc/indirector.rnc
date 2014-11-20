@@ -1,0 +1,45 @@
+# 
+# =============================================================
+# Indirector Topic
+# 
+# Represents an indirect link to a non-topic element. 
+# 
+# The body of topic contains one or more <indirectElementRef>
+# elements. Each indirectElementRef must point to a non-topic
+# element that is the ultimate target of any reference to the 
+# indirector topic.
+# 
+# When there are multiple indirectElementRef elements, renderers
+# may treat each reference as establishing a separate link from
+# the initial reference to the indirector topic or they may 
+# produce a deliverable-specific way of choosing among the
+# the target elements (e.g., a simple list of links, a dropdown
+# list from which the user chooses one, etc.).
+# 
+# Copyright (c) 2014 W. Eliot Kimber
+# 
+# =============================================================
+#   
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+namespace dita = "http://dita.oasis-open.org/architecture/2005/"
+
+div {
+start = indirector.element
+
+}
+div {
+domains-att &= 
+attribute domains { text}?
+}
+div {
+include "urn:oasis:names:tc:dita:rng:topicMod.rnc"
+include "indirectorMod.rnc"
+include "urn:oasis:names:tc:dita:rng:deliveryTargetAttDomainMod.rnc"
+include "urn:oasis:names:tc:dita:rng:releaseManagementDomainMod.rnc"
+include "../../indirector-d/rnc/indirectorDomainMod.rnc"
+}
+div {
+any = (idElements | 
+element  * - (topic | indirector) {
+attribute  * { text}*, any} |  text )*
+}

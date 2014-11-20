@@ -1,0 +1,27 @@
+# 
+# =============================================================
+# Indirector Set
+# 
+# Contains zero or more indirector topic. Serves as a convenience
+# for creating single XML documents that contain multiple indirectors.
+# The indirector set does not affect the semantics of the indirectors
+# it contains.
+# 
+# Copyright (c) 2014 W. Eliot Kimber
+# 
+# =============================================================
+#    
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+namespace dita = "http://dita.oasis-open.org/architecture/2005/"
+
+indirectorset-info-types |= indirector.element
+indirectorset = indirectorset.element
+indirectorset.content = title, titlealts?, prolog?, indirectorset-info-types*
+indirectorset.attributes = 
+attribute id { xsd:ID}, conref-atts, select-atts, localization-atts, 
+attribute outputclass { text}?
+indirectorset.element = 
+element indirectorset {indirectorset.attlist, indirectorset.content}
+indirectorset.attlist &= indirectorset.attributes, arch-atts, domains-att
+indirectorset.attlist &= global-atts, 
+attribute class { text}?

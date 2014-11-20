@@ -1,0 +1,56 @@
+# 
+# =============================================================
+# Indirector Topic
+# 
+# Represents an indirect link to a non-topic element. 
+# 
+# The body of topic contains one or more <indirectElementRef>
+# elements. Each indirectElementRef must point to a non-topic
+# element that is the ultimate target of any reference to the 
+# indirector topic.
+# 
+# When there are multiple indirectElementRef elements, they
+# should have distinct applicability conditions. When more than
+# one indirector is present following filtering or effective
+# per the current filtering conditions, processors should use the first one
+# in document order.
+# 
+# Copyright (c) 2014 W. Eliot Kimber
+# 
+# =============================================================
+#    
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+namespace dita = "http://dita.oasis-open.org/architecture/2005/"
+
+indirector-info-types |=  empty 
+indirector = indirector.element
+indirectorBody = indirectorBody.element
+indirectElementRef = indirectElementRef.element
+indirector.content = title, titlealts?, prolog?, indirectorBody?
+indirector.attributes = 
+attribute id { xsd:ID}, conref-atts, select-atts, localization-atts, 
+attribute outputclass { text}?
+indirector.element = 
+element indirector {indirector.attlist, indirector.content}
+indirector.attlist &= indirector.attributes, arch-atts, domains-att
+indirectorBody.content = (indirectElementRef | data | data-about)*
+indirectorBody.attributes = id-atts, localization-atts, 
+attribute base { text}?, base-attribute-extensions, 
+attribute outputclass { text}?
+indirectorBody.element = 
+element indirectorBody {indirectorBody.attlist, indirectorBody.content}
+indirectorBody.attlist &= indirectorBody.attributes
+indirectElementRef.content = (xreftext.cnt | desc)*
+indirectElementRef.attributes = 
+attribute keyref { text}?, 
+attribute type { text}?, univ-atts, 
+attribute outputclass { text}?
+indirectElementRef.element = 
+element indirectElementRef {indirectElementRef.attlist, indirectElementRef.content}
+indirectElementRef.attlist &= indirectElementRef.attributes
+indirector.attlist &= global-atts, 
+attribute class { text}?
+indirectorBody.attlist &= global-atts, 
+attribute class { text}?
+indirectElementRef.attlist &= global-atts, 
+attribute class { text}?

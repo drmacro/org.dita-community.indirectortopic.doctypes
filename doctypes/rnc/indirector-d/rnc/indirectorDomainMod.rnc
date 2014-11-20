@@ -1,0 +1,22 @@
+# 
+# Defines elements for use with the indirector topic type.
+# 
+# Provides the indirect-xref-anchor element, which serves as a target
+# for indirect xrefs.
+# 
+# Copyright (c) 2014 Eliot Kimber
+#       
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+namespace dita = "http://dita.oasis-open.org/architecture/2005/"
+
+indirector-d-ph = (indirect-xref-anchor.element)
+ph |= indirector-d-ph
+indirect-xref-anchor = indirect-xref-anchor.element
+indirect-xref-anchor.content = (data | data-about)*
+indirect-xref-anchor.attributes = univ-atts, 
+attribute outputclass { text}?
+indirect-xref-anchor.element = 
+element indirect-xref-anchor {indirect-xref-anchor.attlist, indirect-xref-anchor.content}
+indirect-xref-anchor.attlist &= indirect-xref-anchor.attributes
+indirect-xref-anchor.attlist &= global-atts, 
+attribute class { text}?

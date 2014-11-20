@@ -1,0 +1,43 @@
+# 
+# =============================================================
+# DITA Community Sample Indirector-Aware Shell
+# 
+# Integrates the indirector-d domain in addition to full set
+# of technical communication domains and topic types.
+# =============================================================
+# 
+namespace a = "http://relaxng.org/ns/compatibility/annotations/1.0"
+namespace dita = "http://dita.oasis-open.org/architecture/2005/"
+
+div {
+start = topic.element
+
+}
+div {
+domains-att = 
+attribute domains { text}?
+}
+div {
+include "urn:oasis:names:tc:dita:rng:topicMod.rnc"
+include "urn:oasis:names:tc:dita:rng:abbreviateDomainMod.rnc"
+include "urn:oasis:names:tc:dita:rng:deliveryTargetAttDomainMod.rnc"
+include "urn:oasis:names:tc:dita:rng:equationDomainMod.rnc"
+include "urn:oasis:names:tc:dita:rng:hazardDomain.rnc"
+include "urn:oasis:names:tc:dita:rng:highlightDomainMod.rnc"
+include "urn:oasis:names:tc:dita:rng:indexingDomain.rnc"
+include "urn:oasis:names:tc:dita:rng:markupDomainMod.rnc"
+include "urn:oasis:names:tc:dita:rng:mathmlDomainMod.rnc"
+include "urn:oasis:names:tc:dita:rng:programmingDomainMod.rnc"
+include "urn:oasis:names:tc:dita:rng:releaseManagementDomainMod.rnc"
+include "urn:oasis:names:tc:dita:rng:softwareDomainMod.rnc"
+include "urn:oasis:names:tc:dita:rng:svgDomainMod.rnc"
+include "urn:oasis:names:tc:dita:rng:uiDomainMod.rnc"
+include "urn:oasis:names:tc:dita:rng:utilitiesDomainMod.rnc"
+include "urn:oasis:names:tc:dita:rng:xmlDomainMod.rnc"
+include "../../indirector-d/rnc/indirectorDomainMod.rnc"
+}
+div {
+any = (idElements | 
+element  * - (topic) {
+attribute  * { text}*, any} |  text )*
+}
