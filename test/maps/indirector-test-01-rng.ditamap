@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:map.rng:1.3" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<map>
+ <title>Indirector Test Map 01</title>
+  <topicgroup>
+    <keydef
+      href="../topics/indirector-01-urn.xml"
+      keys="indirector-01"/>
+    <keydef
+      href="../topics/indirectorset-01-urn.xml#ind-02"
+      keys="indirector-02"/>
+    <keydef
+      href="../topics/indirectorset-01-urn.xml#ind-03"
+      keys="indirector-03"/>
+    <keydef
+      href="../topics/indirector-03-dtd.xml"
+      keys="indirector-04"/>
+  </topicgroup>
+  <topicref
+    href="../topics/topic-01-dtd.dita"
+    keys="topic-01"/>
+  <topicref
+    href="../topics/task-02-dtd.dita"
+    keys="task-02"/>
+  <topicref
+    href="../topics/task-03-dtd.dita"
+    keys="task-03"/>
+  
+  <reltable
+    title="Indirector Test 01">
+    <relheader>
+      <relcolspec>
+        <topicmeta>
+          <navtitle>Anchor Role 01</navtitle>
+        </topicmeta>
+      </relcolspec>
+      <relcolspec>
+        <topicmeta>
+          <navtitle>Anchor Role 02</navtitle>
+        </topicmeta>
+      </relcolspec>
+    </relheader>
+    <relrow>
+      <relcell>
+        <topicref
+          keyref="indirector-01"/>
+      </relcell>
+      <relcell>
+        <topicref
+          keyref="indirector-02"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell>
+        <topicref
+          keyref="indirector-02"/>
+      </relcell>
+      <relcell>
+        <topicref
+          keyref="indirector-03"/>
+      </relcell>
+    </relrow>
+    <relrow>
+      <relcell/>
+      <relcell/>
+    </relrow>
+  </reltable>
+</map>
