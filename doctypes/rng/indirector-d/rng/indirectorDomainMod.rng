@@ -3,14 +3,16 @@
                          schematypens="http://relaxng.org/ns/structure/1.0"?>
 <grammar xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
   xmlns:dita="http://dita.oasis-open.org/architecture/2005/" 
-  xmlns="http://relaxng.org/ns/structure/1.0">
+datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
+xmlns="http://relaxng.org/ns/structure/1.0">
   <moduleDesc xmlns="http://dita.oasis-open.org/architecture/2005/">
     <moduleTitle>DITA Community Indirector Domain</moduleTitle>
     <headerComment>
 Defines elements for use with the indirector topic type.
 
 Provides the indirect-xref-anchor element, which serves as a target
-for indirect xrefs.
+for indirect xrefs. The anchor may contain the link text to use for the
+cross reference.
 
 Copyright (c) 2014 Eliot Kimber
       </headerComment>
@@ -55,13 +57,19 @@ Copyright (c) 2014 Eliot Kimber
       <define name="indirect-xref-anchor.content">
         <zeroOrMore>
           <choice>
+            <text/>
             <ref name="data"/>
             <ref name="data-about"/>
           </choice>
         </zeroOrMore>
       </define>
       <define name="indirect-xref-anchor.attributes">
-        <ref name="univ-atts"/>
+        <attribute name="id">
+          <data type="NMTOKEN"/>
+        </attribute>
+        <ref name="conref-atts"/>
+        <ref name="select-atts"/> 
+        <ref name="localization-atts"/>
         <optional>
           <attribute name="outputclass"/>
         </optional>

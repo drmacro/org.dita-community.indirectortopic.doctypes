@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="urn:pubid:dita-community.org:doctypes:dita:rng:task+indirector" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <task id="task_yms_xvc_cq">
-    <title>Topic 02</title>
+    <title>Task 02</title>
     <shortdesc>This is topic 02, a short task.</shortdesc>
     <taskbody>
         <context>
@@ -10,7 +10,7 @@
         <steps>
             <step
         id="step-01">
-        <cmd>Topic 02, step 01. Do something...</cmd>
+        <cmd>Topic 02, step 01. <indirect-xref-anchor id="anchor-01">See other thing</indirect-xref-anchor> Do something...</cmd>
       </step>
       <step
         id="step-02">

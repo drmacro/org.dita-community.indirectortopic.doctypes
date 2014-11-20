@@ -2,16 +2,16 @@
 <?xml-model href="urn:public:org.dita-community:doctype:rng:indirectorset" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <indirectorset id="none">
   <title>Indirector Set 01</title>
-  <indirector id="ind-01">
-    <title>Indirector 01</title>
-    <indirectorBody>
-      <indirectElementRef keyref="topic-02/step-01"/>
-    </indirectorBody>
-  </indirector>
   <indirector id="ind-02">
     <title>Indirector 02</title>
     <indirectorBody>
-      <indirectElementRef keyref="topic-03/step-02"/>
+      <indirectElementRef keyref="task-02/step-01"/>
+    </indirectorBody>
+  </indirector>
+  <indirector id="ind-03">
+    <title>Indirector 03</title>
+    <indirectorBody>
+      <indirectElementRef keyref="task-03/step-02"/>
     </indirectorBody>
   </indirector>
 </indirectorset>

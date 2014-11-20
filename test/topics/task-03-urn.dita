@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="urn:pubid:dita-community.org:doctypes:dita:rng:task+indirector" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <task id="task_yms_xvc_cq">
-    <title>Topic 03</title>
+    <title>Task 03</title>
     <shortdesc>This is topic 03, a short task.</shortdesc>
     <taskbody>
         <context>
