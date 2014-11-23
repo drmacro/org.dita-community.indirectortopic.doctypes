@@ -31,10 +31,10 @@ Copyright (c) 2014 W. Eliot Kimber
          <moduleType>topicshell</moduleType>
          <moduleShortName>Indirector Topic</moduleShortName>
          <shellPublicIds>
-            <dtdShell>urn:public:org.dita-community:doctype:dtd:indirector</dtdShell>
-            <rncShell>urn:public:org.dita-community:doctype:rnc:indirector</rncShell>
-            <rngShell>urn:public:org.dita-community:doctype:rng:indirector</rngShell>
-            <xsdShell>urn:public:org.dita-community:doctype:xsd:indirector</xsdShell>
+            <dtdShell>urn:X-pubid:org.dita-community:doctype:dtd:indirector</dtdShell>
+            <rncShell>urn:X-pubid:org.dita-community:doctype:rnc:indirector</rncShell>
+            <rngShell>urn:X-pubid:org.dita-community:doctype:rng:indirector</rngShell>
+            <xsdShell>urn:X-pubid:org.dita-community:doctype:xsd:indirector</xsdShell>
          </shellPublicIds>
       </moduleMetadata>
   </moduleDesc>

@@ -3,23 +3,23 @@
 <!--Indirector Set Shell-->
 
    <group><!-- System ID (URL) catalog entries -->
-      <system systemId="urn:public:org.dita-community:doctype:rnc:indirectorset"
+      <system systemId="urn:X-pubid:org.dita-community:doctype:rnc:indirectorset"
               uri="rnc/indirectorset.rnc"/>
-      <system systemId="urn:public:org.dita-community:doctype:rnc:indirectorset"
+      <system systemId="urn:X-pubid:org.dita-community:doctype:rnc:indirectorset"
               uri="rnc/indirectorset.rnc"/>
-      <system systemId="urn:public:org.dita-community:module:rnc:indirectorsetMod"
+      <system systemId="urn:X-pubid:org.dita-community:module:rnc:indirectorsetMod"
               uri="rnc/indirectorsetMod.rnc"/>
-      <system systemId="urn:public:org.dita-community:module:rnc:indirectorsetMod"
+      <system systemId="urn:X-pubid:org.dita-community:module:rnc:indirectorsetMod"
               uri="rnc/indirectorsetMod.rnc"/>
    </group>
    <group><!-- Public ID (URN) catalog entries -->
-      <uri name="urn:public:org.dita-community:doctype:rnc:indirectorset"
+      <uri name="urn:X-pubid:org.dita-community:doctype:rnc:indirectorset"
            uri="rnc/indirectorset.rnc"/>
-      <uri name="urn:public:org.dita-community:doctype:rnc:indirectorset"
+      <uri name="urn:X-pubid:org.dita-community:doctype:rnc:indirectorset"
            uri="rnc/indirectorset.rnc"/>
-      <uri name="urn:public:org.dita-community:module:rnc:indirectorsetMod"
+      <uri name="urn:X-pubid:org.dita-community:module:rnc:indirectorsetMod"
            uri="rnc/indirectorsetMod.rnc"/>
-      <uri name="urn:public:org.dita-community:module:rnc:indirectorsetMod"
+      <uri name="urn:X-pubid:org.dita-community:module:rnc:indirectorsetMod"
            uri="rnc/indirectorsetMod.rnc"/>
    </group>
 </catalog>

@@ -14,12 +14,12 @@
 <!-- ============================================================= -->
 
 <!ENTITY % indirectorset-dec
-  PUBLIC "urn:public:org.dita-community:entities:dtd:indirectorsetMod"
+  PUBLIC "urn:X-pubid:org.dita-community:entities:dtd:indirectorsetMod"
          "indirectorset.ent"
 >%indirectorset-dec;
 
 <!ENTITY % indirector-dec
-  PUBLIC "urn:public:org.dita-community:entities:dtd:indirectorMod"
+  PUBLIC "urn:X-pubid:org.dita-community:entities:dtd:indirectorMod"
          "../../indirector/dtd/indirector.ent"
 >%indirector-dec;
 
@@ -33,7 +33,7 @@
 >%relmgmt-d-dec;
 
 <!ENTITY % indirector-d-dec
-  PUBLIC "urn:pubid:dita-community.org:doctypes:dita:modules:indirectorDomain:entities"
+  PUBLIC "urn:X-pubid:dita-community.org:doctypes:dita:modules:indirectorDomain:entities"
          "../../indirector-d/dtd/indirectorDomain.ent"
 >%indirector-d-dec;
 
@@ -111,12 +111,12 @@
 >%topic-type;
 
 <!ENTITY % indirectorset-type
-  PUBLIC "urn:public:org.dita-community:module:dtd:indirectorsetMod"
+  PUBLIC "urn:X-pubid:org.dita-community:module:dtd:indirectorsetMod"
          "indirectorset.mod"
 >%indirectorset-type;
 
 <!ENTITY % indirector-type
-  PUBLIC "urn:public:org.dita-community:module:dtd:indirectorMod"
+  PUBLIC "urn:X-pubid:org.dita-community:module:dtd:indirectorMod"
          "../../indirector/dtd/indirector.mod"
 >%indirector-type;
 
@@ -130,7 +130,7 @@
 >%relmgmt-d-def;
 
 <!ENTITY % indirector-d-def
-  PUBLIC "urn:pubid:dita-community.org:doctypes:dita:modules:indirectorDomain"
+  PUBLIC "urn:X-pubid:dita-community.org:doctypes:dita:modules:indirectorDomain"
          "../../indirector-d/dtd/indirectorDomain.mod"
 >%indirector-d-def;
 

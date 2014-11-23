@@ -3,15 +3,15 @@
 <!--DITA Community Indirector Domain-->
 
    <group><!-- System ID (URL) catalog entries -->
-      <system systemId="urn:pubid:dita-community.org:doctypes:dita:rnc:indirectorDomainMod.rnc"
+      <system systemId="urn:X-pubid:dita-community.org:doctypes:dita:rnc:indirectorDomainMod.rnc"
               uri="rnc/indirectorDomainMod.rnc"/>
-      <system systemId="urn:pubid:dita-community.org:doctypes:dita:rnc:indirectorDomainMod.rnc"
+      <system systemId="urn:X-pubid:dita-community.org:doctypes:dita:rnc:indirectorDomainMod.rnc"
               uri="rnc/indirectorDomainMod.rnc"/>
    </group>
    <group><!-- Public ID (URN) catalog entries -->
-      <uri name="urn:pubid:dita-community.org:doctypes:dita:rnc:indirectorDomainMod.rnc"
+      <uri name="urn:X-pubid:dita-community.org:doctypes:dita:rnc:indirectorDomainMod.rnc"
            uri="rnc/indirectorDomainMod.rnc"/>
-      <uri name="urn:pubid:dita-community.org:doctypes:dita:rnc:indirectorDomainMod.rnc"
+      <uri name="urn:X-pubid:dita-community.org:doctypes:dita:rnc:indirectorDomainMod.rnc"
            uri="rnc/indirectorDomainMod.rnc"/>
    </group>
 </catalog>

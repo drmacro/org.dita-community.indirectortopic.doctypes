@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Defines elements for use with the indirector topic type.      -->
 <!-- Provides the indirect-xref-anchor element, which serves as a target -->
-<!-- for indirect xrefs.                                           -->
+<!-- for indirect xrefs. The anchor may contain the link text to use for the -->
+<!-- cross reference.                                              -->
 <!-- Copyright (c) 2014 Eliot Kimber                               -->
 <!--                                                               -->
 
@@ -18,11 +19,17 @@
 
 <!--                    LONG NAME: Indirect XRef Anchor            -->
 <!ENTITY % indirect-xref-anchor.content
-                       "(%data; |
+                       "(#PCDATA |
+                         %data; |
                          %data-about;)*"
 >
 <!ENTITY % indirect-xref-anchor.attributes
-              "%univ-atts;
+              "id
+                          NMTOKEN
+                                    #REQUIRED
+               %conref-atts;
+               %select-atts;
+               %localization-atts;
                outputclass
                           CDATA
                                     #IMPLIED"

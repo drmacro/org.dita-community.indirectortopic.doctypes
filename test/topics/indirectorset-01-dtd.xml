@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE indirectorset PUBLIC "urn:public:org.dita-community:doctype:dtd:indirectorset" "indirectorset.dtd">
+<!DOCTYPE indirectorset PUBLIC "urn:X-pubid:org.dita-community:doctype:dtd:indirectorset" "indirectorset.dtd">
 <indirectorset id="none">
   <title>Indirector Set 01</title>
   <indirector id="ind-02">

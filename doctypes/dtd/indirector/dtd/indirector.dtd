@@ -21,7 +21,7 @@
 <!-- ============================================================= -->
 
 <!ENTITY % indirector-dec
-  PUBLIC "urn:public:org.dita-community:entities:dtd:indirectorMod"
+  PUBLIC "urn:X-pubid:org.dita-community:entities:dtd:indirectorMod"
          "indirector.ent"
 >%indirector-dec;
 
@@ -35,7 +35,7 @@
 >%relmgmt-d-dec;
 
 <!ENTITY % indirector-d-dec
-  PUBLIC "urn:pubid:dita-community.org:doctypes:dita:modules:indirectorDomain:entities"
+  PUBLIC "urn:X-pubid:dita-community.org:doctypes:dita:modules:indirectorDomain:entities"
          "../../indirector-d/dtd/indirectorDomain.ent"
 >%indirector-d-dec;
 
@@ -109,7 +109,7 @@
 >%topic-type;
 
 <!ENTITY % indirector-type
-  PUBLIC "urn:public:org.dita-community:module:dtd:indirectorMod"
+  PUBLIC "urn:X-pubid:org.dita-community:module:dtd:indirectorMod"
          "indirector.mod"
 >%indirector-type;
 
@@ -123,7 +123,7 @@
 >%relmgmt-d-def;
 
 <!ENTITY % indirector-d-def
-  PUBLIC "urn:pubid:dita-community.org:doctypes:dita:modules:indirectorDomain"
+  PUBLIC "urn:X-pubid:dita-community.org:doctypes:dita:modules:indirectorDomain"
          "../../indirector-d/dtd/indirectorDomain.mod"
 >%indirector-d-def;
 

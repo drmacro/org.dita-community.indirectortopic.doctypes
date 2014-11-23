@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE task PUBLIC "urn:pubid:dita-community.org:doctypes:dita:task+indirector" "task.dtd">
+<!DOCTYPE task PUBLIC "urn:X-pubid:dita-community.org:doctypes:dita:task+indirector" "task.dtd">
 <task id="task_yms_xvc_cq">
     <title>Task 03</title>
     <shortdesc>This is topic 03, a short task.</shortdesc>

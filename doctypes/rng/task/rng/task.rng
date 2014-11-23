@@ -17,10 +17,10 @@ of technical communication domains and topic types.
          <moduleType>topicshell</moduleType>
          <moduleShortName>task</moduleShortName>
          <shellPublicIds>
-            <dtdShell>urn:pubid:dita-community.org:doctypes:dita:task+indirector</dtdShell>
-            <rncShell>urn:pubid:dita-community.org:doctypes:dita:rnc:task+indirector</rncShell>
-            <rngShell>urn:pubid:dita-community.org:doctypes:dita:rng:task+indirector</rngShell>
-            <xsdShell>urn:pubid:dita-community.org:doctypes:dita:xsd:task+indirector</xsdShell>
+            <dtdShell>urn:X-pubid:dita-community.org:doctypes:dita:task+indirector</dtdShell>
+            <rncShell>urn:X-pubid:dita-community.org:doctypes:dita:rnc:task+indirector</rncShell>
+            <rngShell>urn:X-pubid:dita-community.org:doctypes:dita:rng:task+indirector</rngShell>
+            <xsdShell>urn:X-pubid:dita-community.org:doctypes:dita:xsd:task+indirector</xsdShell>
          </shellPublicIds>
       </moduleMetadata>
   </moduleDesc>

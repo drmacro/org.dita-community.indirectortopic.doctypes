@@ -3,15 +3,15 @@
 <!--DITA Community Indirector-Aware Topic Shell-->
 
    <group><!-- System ID (URL) catalog entries -->
-      <system systemId="urn:pubid:dita-community.org:doctypes:dita:xsd:topic+indirector"
+      <system systemId="urn:X-pubid:dita-community.org:doctypes:dita:xsd:topic+indirector"
               uri="xsd/topic.xsd"/>
-      <system systemId="urn:pubid:dita-community.org:doctypes:dita:xsd:topic+indirector"
+      <system systemId="urn:X-pubid:dita-community.org:doctypes:dita:xsd:topic+indirector"
               uri="xsd/topic.xsd"/>
    </group>
    <group><!-- Public ID (URN) catalog entries -->
-      <uri name="urn:pubid:dita-community.org:doctypes:dita:xsd:topic+indirector"
+      <uri name="urn:X-pubid:dita-community.org:doctypes:dita:xsd:topic+indirector"
            uri="xsd/topic.xsd"/>
-      <uri name="urn:pubid:dita-community.org:doctypes:dita:xsd:topic+indirector"
+      <uri name="urn:X-pubid:dita-community.org:doctypes:dita:xsd:topic+indirector"
            uri="xsd/topic.xsd"/>
    </group>
 </catalog>

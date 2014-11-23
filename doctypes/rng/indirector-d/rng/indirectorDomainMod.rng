@@ -20,26 +20,22 @@ Copyright (c) 2014 Eliot Kimber
       <moduleType>elementdomain</moduleType>
       <moduleShortName>indirector-d</moduleShortName>
       <modulePublicIds>
-        <dtdMod>urn:pubid:dita-community.org:doctypes:dita:modules:indirectorDomain</dtdMod>
-        <dtdEnt>urn:pubid:dita-community.org:doctypes:dita:modules:indirectorDomain:entities</dtdEnt>
-        <xsdMod>urn:pubid:dita-community.org:doctypes:dita:xsd:indirectorDomainMod.xsd</xsdMod>
-        <rncMod>urn:pubid:dita-community.org:doctypes:dita:rnc:indirectorDomainMod.rnc</rncMod>
-        <rngMod>urn:pubid:dita-community.org:doctypes:dita:rng:indirectorDomainMod.rng</rngMod>
+        <dtdMod>urn:X-pubid:dita-community.org:doctypes:dita:modules:indirectorDomain</dtdMod>
+        <dtdEnt>urn:X-pubid:dita-community.org:doctypes:dita:modules:indirectorDomain:entities</dtdEnt>
+        <xsdMod>urn:X-pubid:dita-community.org:doctypes:dita:xsd:indirectorDomainMod.xsd</xsdMod>
+        <rncMod>urn:X-pubid:dita-community.org:doctypes:dita:rnc:indirectorDomainMod.rnc</rncMod>
+        <rngMod>urn:X-pubid:dita-community.org:doctypes:dita:rng:indirectorDomainMod.rng</rngMod>
       </modulePublicIds>
       <domainsContribution>(topic indirector-d)</domainsContribution>
     </moduleMetadata>
   </moduleDesc>
-
   <div>
     <a:documentation>DOMAIN EXTENSION PATTERNS</a:documentation>
-    
-
     <define name="indirector-d-ph">
       <choice>
         <ref name="indirect-xref-anchor.element"/>
       </choice>
     </define>
-
     <define name="ph" combine="choice">
       <ref name="indirector-d-ph"/>
     </define>
@@ -85,10 +81,6 @@ Copyright (c) 2014 Eliot Kimber
         <ref name="indirect-xref-anchor.attributes"/>
       </define>
     </div>    
-        
-    
-      
-        
   </div>
   <div>
     <a:documentation>SPECIALIZATION ATTRIBUTE DECLARATIONS</a:documentation>
@@ -98,9 +90,5 @@ Copyright (c) 2014 Eliot Kimber
         <attribute name="class" a:defaultValue="+ topic/ph indirector-d/indirect-xref-anchor "/>
       </optional>
     </define>
-    
-    
-    
-    
   </div>
 </grammar>

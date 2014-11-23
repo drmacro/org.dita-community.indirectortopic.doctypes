@@ -3,23 +3,23 @@
 <!--Indirector Topic Shell-->
 
    <group><!-- System ID (URL) catalog entries -->
-      <system systemId="urn:public:org.dita-community:doctype:xsd:indirector"
+      <system systemId="urn:X-pubid:org.dita-community:doctype:xsd:indirector"
               uri="xsd/indirector.xsd"/>
-      <system systemId="urn:public:org.dita-community:doctype:xsd:indirector"
+      <system systemId="urn:X-pubid:org.dita-community:doctype:xsd:indirector"
               uri="xsd/indirector.xsd"/>
-      <system systemId="urn:public:org.dita-community:module:xsd:indirectorMod"
+      <system systemId="urn:X-pubid:org.dita-community:module:xsd:indirectorMod"
               uri="xsd/indirectorMod.xsd"/>
-      <system systemId="urn:public:org.dita-community:module:xsd:indirectorMod"
+      <system systemId="urn:X-pubid:org.dita-community:module:xsd:indirectorMod"
               uri="xsd/indirectorMod.xsd"/>
    </group>
    <group><!-- Public ID (URN) catalog entries -->
-      <uri name="urn:public:org.dita-community:doctype:xsd:indirector"
+      <uri name="urn:X-pubid:org.dita-community:doctype:xsd:indirector"
            uri="xsd/indirector.xsd"/>
-      <uri name="urn:public:org.dita-community:doctype:xsd:indirector"
+      <uri name="urn:X-pubid:org.dita-community:doctype:xsd:indirector"
            uri="xsd/indirector.xsd"/>
-      <uri name="urn:public:org.dita-community:module:xsd:indirectorMod"
+      <uri name="urn:X-pubid:org.dita-community:module:xsd:indirectorMod"
            uri="xsd/indirectorMod.xsd"/>
-      <uri name="urn:public:org.dita-community:module:xsd:indirectorMod"
+      <uri name="urn:X-pubid:org.dita-community:module:xsd:indirectorMod"
            uri="xsd/indirectorMod.xsd"/>
    </group>
 </catalog>
