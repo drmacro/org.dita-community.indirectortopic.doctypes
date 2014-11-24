@@ -28,11 +28,11 @@ Copyright (c) 2014 W. Eliot Kimber
       <moduleType>topic</moduleType>
       <moduleShortName>indirector</moduleShortName>
       <modulePublicIds>
-        <dtdEnt>urn:X-pubid:org.dita-community:entities:dtd:indirectorMod</dtdEnt>
-        <dtdMod>urn:X-pubid:org.dita-community:module:dtd:indirectorMod</dtdMod>
-        <rncMod>urn:X-pubid:org.dita-community:module:rnc:indirectorMod</rncMod>
-        <rngMod>urn:X-pubid:org.dita-community:module:rng:indirectorMod</rngMod>
-        <xsdMod>urn:X-pubid:org.dita-community:module:xsd:indirectorMod</xsdMod>
+        <dtdEnt>urn:pubid:org.dita-community:entities:dtd:indirectorMod</dtdEnt>
+        <dtdMod>urn:pubid:org.dita-community:module:dtd:indirectorMod</dtdMod>
+        <rncMod>urn:pubid:org.dita-community:module:rnc:indirectorMod</rncMod>
+        <rngMod>urn:pubid:org.dita-community:module:rng:indirectorMod</rngMod>
+        <xsdMod>urn:pubid:org.dita-community:module:xsd:indirectorMod</xsdMod>
       </modulePublicIds>
       <domainsContribution>(topic indirector)</domainsContribution>
     </moduleMetadata>

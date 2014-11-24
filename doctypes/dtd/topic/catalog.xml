@@ -2,8 +2,8 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
 <!--DITA Community Indirector-Aware Topic Shell-->
 
-   <public publicId="urn:X-pubid:dita-community.org:doctypes:dita:topic+indirector"
+   <public publicId="urn:pubid:dita-community.org:doctypes:dita:topic+indirector"
            uri="dtd/topic.dtd"/>
-   <public publicId="urn:X-pubid:dita-community.org:doctypes:dita:topic+indirector"
+   <public publicId="urn:pubid:dita-community.org:doctypes:dita:topic+indirector"
            uri="dtd/topic.dtd"/>
 </catalog>

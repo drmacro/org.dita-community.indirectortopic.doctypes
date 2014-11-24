@@ -20,11 +20,11 @@ Copyright (c) 2014 W. Eliot Kimber
       <moduleType>topic</moduleType>
       <moduleShortName>indirectorset</moduleShortName>
       <modulePublicIds>
-        <dtdEnt>urn:X-pubid:org.dita-community:entities:dtd:indirectorsetMod</dtdEnt>
-        <dtdMod>urn:X-pubid:org.dita-community:module:dtd:indirectorsetMod</dtdMod>
-        <rncMod>urn:X-pubid:org.dita-community:module:rnc:indirectorsetMod</rncMod>
-        <rngMod>urn:X-pubid:org.dita-community:module:rng:indirectorsetMod</rngMod>
-        <xsdMod>urn:X-pubid:org.dita-community:module:xsd:indirectorsetMod</xsdMod>
+        <dtdEnt>urn:pubid:org.dita-community:entities:dtd:indirectorsetMod</dtdEnt>
+        <dtdMod>urn:pubid:org.dita-community:module:dtd:indirectorsetMod</dtdMod>
+        <rncMod>urn:pubid:org.dita-community:module:rnc:indirectorsetMod</rncMod>
+        <rngMod>urn:pubid:org.dita-community:module:rng:indirectorsetMod</rngMod>
+        <xsdMod>urn:pubid:org.dita-community:module:xsd:indirectorsetMod</xsdMod>
       </modulePublicIds>
       <domainsContribution>(topic indirectorset)</domainsContribution>
     </moduleMetadata>

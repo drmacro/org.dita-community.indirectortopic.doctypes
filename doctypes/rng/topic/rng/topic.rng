@@ -20,10 +20,10 @@ of technical communication domains and topic types.
          <moduleType>topicshell</moduleType>
          <moduleShortName>dc-topic</moduleShortName>
          <shellPublicIds>
-            <dtdShell>urn:X-pubid:dita-community.org:doctypes:dita:topic+indirector</dtdShell>
-            <rncShell>urn:X-pubid:dita-community.org:doctypes:dita:rnc:topic+indirector</rncShell>
-            <rngShell>urn:X-pubid:dita-community.org:doctypes:dita:rng:topic+indirector</rngShell>
-            <xsdShell>urn:X-pubid:dita-community.org:doctypes:dita:xsd:topic+indirector</xsdShell>
+            <dtdShell>urn:pubid:dita-community.org:doctypes:dita:topic+indirector</dtdShell>
+            <rncShell>urn:pubid:dita-community.org:doctypes:dita:rnc:topic+indirector</rncShell>
+            <rngShell>urn:pubid:dita-community.org:doctypes:dita:rng:topic+indirector</rngShell>
+            <xsdShell>urn:pubid:dita-community.org:doctypes:dita:xsd:topic+indirector</xsdShell>
          </shellPublicIds>
       </moduleMetadata>
   </moduleDesc>

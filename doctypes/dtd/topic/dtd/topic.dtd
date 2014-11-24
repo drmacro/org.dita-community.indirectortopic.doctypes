@@ -84,7 +84,7 @@
 >%xml-d-dec;
 
 <!ENTITY % indirector-d-dec
-  PUBLIC "urn:X-pubid:dita-community.org:doctypes:dita:modules:indirectorDomain:entities"
+  PUBLIC "urn:pubid:dita-community.org:doctypes:dita:modules:indirectorDomain:entities"
          "../../indirector-d/dtd/indirectorDomain.ent"
 >%indirector-d-dec;
 
@@ -286,7 +286,7 @@
 >%xml-d-def;
 
 <!ENTITY % indirector-d-def
-  PUBLIC "urn:X-pubid:dita-community.org:doctypes:dita:modules:indirectorDomain"
+  PUBLIC "urn:pubid:dita-community.org:doctypes:dita:modules:indirectorDomain"
          "../../indirector-d/dtd/indirectorDomain.mod"
 >%indirector-d-def;
 

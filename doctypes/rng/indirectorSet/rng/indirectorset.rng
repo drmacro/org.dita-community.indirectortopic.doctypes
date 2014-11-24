@@ -22,10 +22,10 @@ Copyright (c) 2014 W. Eliot Kimber
          <moduleType>topicshell</moduleType>
          <moduleShortName>Indirector Set</moduleShortName>
          <shellPublicIds>
-            <dtdShell>urn:X-pubid:org.dita-community:doctype:dtd:indirectorset</dtdShell>
-            <rncShell>urn:X-pubid:org.dita-community:doctype:rnc:indirectorset</rncShell>
-            <rngShell>urn:X-pubid:org.dita-community:doctype:rng:indirectorset</rngShell>
-            <xsdShell>urn:X-pubid:org.dita-community:doctype:xsd:indirectorset</xsdShell>
+            <dtdShell>urn:pubid:org.dita-community:doctype:dtd:indirectorset</dtdShell>
+            <rncShell>urn:pubid:org.dita-community:doctype:rnc:indirectorset</rncShell>
+            <rngShell>urn:pubid:org.dita-community:doctype:rng:indirectorset</rngShell>
+            <xsdShell>urn:pubid:org.dita-community:doctype:xsd:indirectorset</xsdShell>
          </shellPublicIds>
       </moduleMetadata>
   </moduleDesc>
@@ -66,7 +66,7 @@ Copyright (c) 2014 W. Eliot Kimber
       <include href="urn:oasis:names:tc:dita:rng:topicMod.rng"/>
       <include href="indirectorsetMod.rng">
         <define name="indirectorset-info-types">
-           <ref name="indirector.element"/>
+           <ref name="indirector"/>
         </define>
       </include>
       <include href="../../indirector/rng/indirectorMod.rng"/>

@@ -2,16 +2,16 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
 <!--Indirector Set Shell-->
 
-   <public publicId="urn:X-pubid:org.dita-community:doctype:dtd:indirectorset"
+   <public publicId="urn:pubid:org.dita-community:doctype:dtd:indirectorset"
            uri="dtd/indirectorset.dtd"/>
-   <public publicId="urn:X-pubid:org.dita-community:doctype:dtd:indirectorset"
+   <public publicId="urn:pubid:org.dita-community:doctype:dtd:indirectorset"
            uri="dtd/indirectorset.dtd"/>
-   <public publicId="urn:X-pubid:org.dita-community:entities:dtd:indirectorsetMod"
+   <public publicId="urn:pubid:org.dita-community:entities:dtd:indirectorsetMod"
            uri="dtd/indirectorset.ent"/>
-   <public publicId="urn:X-pubid:org.dita-community:entities:dtd:indirectorsetMod"
+   <public publicId="urn:pubid:org.dita-community:entities:dtd:indirectorsetMod"
            uri="dtd/indirectorset.ent"/>
-   <public publicId="urn:X-pubid:org.dita-community:module:dtd:indirectorsetMod"
+   <public publicId="urn:pubid:org.dita-community:module:dtd:indirectorsetMod"
            uri="dtd/indirectorset.mod"/>
-   <public publicId="urn:X-pubid:org.dita-community:module:dtd:indirectorsetMod"
+   <public publicId="urn:pubid:org.dita-community:module:dtd:indirectorsetMod"
            uri="dtd/indirectorset.mod"/>
 </catalog>

@@ -3,23 +3,23 @@
 <!--Indirector Set Shell-->
 
    <group><!-- System ID (URL) catalog entries -->
-      <system systemId="urn:X-pubid:org.dita-community:doctype:xsd:indirectorset"
+      <system systemId="urn:pubid:org.dita-community:doctype:xsd:indirectorset"
               uri="xsd/indirectorset.xsd"/>
-      <system systemId="urn:X-pubid:org.dita-community:doctype:xsd:indirectorset"
+      <system systemId="urn:pubid:org.dita-community:doctype:xsd:indirectorset"
               uri="xsd/indirectorset.xsd"/>
-      <system systemId="urn:X-pubid:org.dita-community:module:xsd:indirectorsetMod"
+      <system systemId="urn:pubid:org.dita-community:module:xsd:indirectorsetMod"
               uri="xsd/indirectorsetMod.xsd"/>
-      <system systemId="urn:X-pubid:org.dita-community:module:xsd:indirectorsetMod"
+      <system systemId="urn:pubid:org.dita-community:module:xsd:indirectorsetMod"
               uri="xsd/indirectorsetMod.xsd"/>
    </group>
    <group><!-- Public ID (URN) catalog entries -->
-      <uri name="urn:X-pubid:org.dita-community:doctype:xsd:indirectorset"
+      <uri name="urn:pubid:org.dita-community:doctype:xsd:indirectorset"
            uri="xsd/indirectorset.xsd"/>
-      <uri name="urn:X-pubid:org.dita-community:doctype:xsd:indirectorset"
+      <uri name="urn:pubid:org.dita-community:doctype:xsd:indirectorset"
            uri="xsd/indirectorset.xsd"/>
-      <uri name="urn:X-pubid:org.dita-community:module:xsd:indirectorsetMod"
+      <uri name="urn:pubid:org.dita-community:module:xsd:indirectorsetMod"
            uri="xsd/indirectorsetMod.xsd"/>
-      <uri name="urn:X-pubid:org.dita-community:module:xsd:indirectorsetMod"
+      <uri name="urn:pubid:org.dita-community:module:xsd:indirectorsetMod"
            uri="xsd/indirectorsetMod.xsd"/>
    </group>
 </catalog>

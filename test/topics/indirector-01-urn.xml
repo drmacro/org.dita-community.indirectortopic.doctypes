@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="urn:X-pubid:org.dita-community:doctype:rng:indirector" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="urn:pubid:org.dita-community:doctype:rng:indirector" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <indirector id="none">
   <title>Indirector 01</title>
   <indirectorBody>
