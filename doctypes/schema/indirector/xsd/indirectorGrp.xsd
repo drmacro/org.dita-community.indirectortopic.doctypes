@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--=============================================================-->
+<!--Indirector Topic                                             -->
+<!--Represents an indirect link to a non-topic element.          -->
+<!--The body of topic contains one or more <indirectElementRef>  -->
+<!--elements. Each indirectElementRef must point to a non-topic  -->
+<!--element that is the ultimate target of any reference to the  -->
+<!--indirector topic.                                            -->
+<!--When there are multiple indirectElementRef elements, they    -->
+<!--should have distinct applicability conditions. When more than-->
+<!--one indirector is present following filtering or effective   -->
+<!--per the current filtering conditions, processors should use the first one-->
+<!--in document order.                                           -->
+<!--Copyright (c) 2014 W. Eliot Kimber                           -->
+<!--=============================================================-->
+<!--                                                             -->
+<xs:schema xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:group name="indirector">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element ref="indirector"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   <xs:group name="indirectorBody">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element ref="indirectorBody"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   <xs:group name="indirectElementRef">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element ref="indirectElementRef"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+</xs:schema>

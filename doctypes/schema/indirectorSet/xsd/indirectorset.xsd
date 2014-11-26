@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--=============================================================-->
-<!--Indirector Topic                                             -->
-<!--Represents an indirect link to a non-topic element.          -->
-<!--The body of topic contains one or more <indirectElementRef>  -->
-<!--elements. Each indirectElementRef must point to a non-topic  -->
-<!--element that is the ultimate target of any reference to the  -->
-<!--indirector topic.                                            -->
-<!--When there are multiple indirectElementRef elements, renderers-->
-<!--may treat each reference as establishing a separate link from-->
-<!--the initial reference to the indirector topic or they may    -->
-<!--produce a deliverable-specific way of choosing among the     -->
-<!--the target elements (e.g., a simple list of links, a dropdown-->
-<!--list from which the user chooses one, etc.).                 -->
+<!--Indirector Set                                               -->
+<!--Contains zero or more indirector topic. Serves as a convenience-->
+<!--for creating single XML documents that contain multiple indirectors.-->
+<!--The indirector set does not affect the semantics of the indirectors-->
+<!--it contains.                                                 -->
 <!--Copyright (c) 2014 W. Eliot Kimber                           -->
 <!--=============================================================-->
 <!--                                                             -->
@@ -27,6 +20,7 @@
    <!-- ================ GROUP DEFINITIONS ===================== -->
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:tblDeclGrp.xsd:1.3"/>
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:topicGrp.xsd:1.3"/>
+   <xs:include schemaLocation="urn:pubid:org.dita-community:module:xsd:indirectorsetGrp"/>
    <xs:include schemaLocation="urn:pubid:org.dita-community:module:xsd:indirectorGrp"/>
 
    <!-- =================  MODULE INCLUDE DEFINITION  ================== -->
@@ -61,6 +55,7 @@
 
 
    <xs:include schemaLocation="urn:oasis:names:tc:dita:xsd:topicMod.xsd:1.3"/>
+   <xs:include schemaLocation="urn:pubid:org.dita-community:module:xsd:indirectorsetMod"/>
    <xs:include schemaLocation="urn:pubid:org.dita-community:module:xsd:indirectorMod"/>
    <!--  ================ INFO-TYPES DEFINITION =====================  -->
    <xs:group name="info-types">
@@ -78,6 +73,6 @@ It must be declared in topic-type shells.
    <xs:attributeGroup name="domains-att">
       <xs:attribute name="domains"
                     type="xs:string"
-                    default="(topic indirector) (topic indirector-d) (topic relmgmt-d) (topic topic) a(props deliveryTarget)"/>
+                    default="(topic abbrev-d) (topic concept glossentry) (topic concept) (topic equation-d) (topic hazard-d) (topic hi-d) (topic indexing-d) (topic markup-d xml-d) (topic markup-d) (topic mathml-d) (topic pr-d) (topic relmgmt-d) (topic svg-d) (topic sw-d) (topic topic) (topic ui-d) (topic ut-d) a(props deliveryTarget)"/>
    </xs:attributeGroup>
 </xs:schema>

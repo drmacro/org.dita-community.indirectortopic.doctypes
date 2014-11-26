@@ -11,6 +11,10 @@
               uri="xsd/indirectorMod.xsd"/>
       <system systemId="urn:pubid:org.dita-community:module:xsd:indirectorMod"
               uri="xsd/indirectorMod.xsd"/>
+      <system systemId="urn:pubid:org.dita-community:module:xsd:indirectorGrp"
+              uri="xsd/indirectorGrp.xsd"/>
+      <system systemId="urn:pubid:org.dita-community:module:xsd:indirectorGrp"
+              uri="xsd/indirectorGrp.xsd"/>
    </group>
    <group><!-- Public ID (URN) catalog entries -->
       <uri name="urn:pubid:org.dita-community:doctype:xsd:indirector"
@@ -21,5 +25,9 @@
            uri="xsd/indirectorMod.xsd"/>
       <uri name="urn:pubid:org.dita-community:module:xsd:indirectorMod"
            uri="xsd/indirectorMod.xsd"/>
+      <uri name="urn:pubid:org.dita-community:module:xsd:indirectorGrp"
+           uri="xsd/indirectorGrp.xsd"/>
+      <uri name="urn:pubid:org.dita-community:module:xsd:indirectorGrp"
+           uri="xsd/indirectorGrp.xsd"/>
    </group>
 </catalog>

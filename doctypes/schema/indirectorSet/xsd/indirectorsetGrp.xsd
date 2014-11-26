@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--=============================================================-->
+<!--Indirector Set                                               -->
+<!--Contains zero or more indirector topic. Serves as a convenience-->
+<!--for creating single XML documents that contain multiple indirectors.-->
+<!--The indirector set does not affect the semantics of the indirectors-->
+<!--it contains.                                                 -->
+<!--Copyright (c) 2014 W. Eliot Kimber                           -->
+<!--=============================================================-->
+<!--                                                             -->
+<xs:schema xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:group name="indirectorset">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element ref="indirectorset"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+</xs:schema>

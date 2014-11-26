@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--=============================================================-->
+<!--Indirector Set                                               -->
+<!--Contains zero or more indirector topic. Serves as a convenience-->
+<!--for creating single XML documents that contain multiple indirectors.-->
+<!--The indirector set does not affect the semantics of the indirectors-->
+<!--it contains.                                                 -->
+<!--Copyright (c) 2014 W. Eliot Kimber                           -->
+<!--=============================================================-->
+<!--                                                             -->
+<xs:schema xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- ==================== Import Section ======================= -->
+   <xs:import namespace="http://dita.oasis-open.org/architecture/2005/"
+              schemaLocation="urn:oasis:names:tc:dita:xsd:ditaarch.xsd:1.3"/>
+
+   <xs:annotation>
+      <xs:appinfo>
+         <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic indirectorset)</dita:domainsModule>
+      </xs:appinfo>
+   </xs:annotation>
+
+   <xs:group name="indirectorset-info-types">
+      <xs:choice>
+         <xs:group ref="indirectorset"/>
+         <xs:group ref="info-types"/>
+      </xs:choice>
+   </xs:group>
+   <xs:element name="indirectorset">
+      <xs:annotation>
+         <xs:documentation>Represents an indirect link to a non-topic element.</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="indirectorset.class">
+               <xs:attribute ref="class" default="- topic/topic indirectorset/indirectorset "/>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:complexType name="indirectorset.class">
+      <xs:sequence>
+         <xs:group ref="indirectorset.content"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="indirectorset.attributes"/>
+   </xs:complexType>
+   <xs:group name="indirectorset.content">
+      <xs:sequence>
+         <xs:group ref="title"/>
+         <xs:group ref="titlealts" minOccurs="0"/>
+         <xs:group ref="prolog" minOccurs="0"/>
+         <xs:group ref="indirectorset-info-types" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:group>
+   <xs:attributeGroup name="indirectorset.attributes">
+      <xs:attribute name="id" use="required" type="xs:ID"/>
+      <xs:attributeGroup ref="conref-atts"/>
+      <xs:attributeGroup ref="select-atts"/>
+      <xs:attributeGroup ref="localization-atts"/>
+      <xs:attribute name="outputclass" type="xs:string"/>
+      <xs:attribute ref="ditaarch:DITAArchVersion"/>
+      <xs:attributeGroup ref="domains-att"/>
+      <xs:attributeGroup ref="global-atts"/>
+   </xs:attributeGroup>
+   <xs:attributeGroup name="indirectorset.attlist">
+      <xs:attribute ref="ditaarch:DITAArchVersion"/>
+      <xs:attributeGroup ref="domains-att"/>
+   </xs:attributeGroup>
+</xs:schema>

@@ -24,6 +24,7 @@ Copyright (c) 2014 W. Eliot Kimber
         <dtdMod>urn:pubid:org.dita-community:module:dtd:indirectorsetMod</dtdMod>
         <rncMod>urn:pubid:org.dita-community:module:rnc:indirectorsetMod</rncMod>
         <rngMod>urn:pubid:org.dita-community:module:rng:indirectorsetMod</rngMod>
+        <xsdGrp>urn:pubid:org.dita-community:module:xsd:indirectorsetGrp</xsdGrp>
         <xsdMod>urn:pubid:org.dita-community:module:xsd:indirectorsetMod</xsdMod>
       </modulePublicIds>
       <domainsContribution>(topic indirectorset)</domainsContribution>

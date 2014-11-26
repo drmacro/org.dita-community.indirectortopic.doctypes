@@ -33,6 +33,7 @@ Copyright (c) 2014 W. Eliot Kimber
         <rncMod>urn:pubid:org.dita-community:module:rnc:indirectorMod</rncMod>
         <rngMod>urn:pubid:org.dita-community:module:rng:indirectorMod</rngMod>
         <xsdMod>urn:pubid:org.dita-community:module:xsd:indirectorMod</xsdMod>
+        <xsdGrp>urn:pubid:org.dita-community:module:xsd:indirectorGrp</xsdGrp>
       </modulePublicIds>
       <domainsContribution>(topic indirector)</domainsContribution>
     </moduleMetadata>

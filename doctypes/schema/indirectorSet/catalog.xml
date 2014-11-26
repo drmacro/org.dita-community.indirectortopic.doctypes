@@ -7,6 +7,10 @@
               uri="xsd/indirectorset.xsd"/>
       <system systemId="urn:pubid:org.dita-community:doctype:xsd:indirectorset"
               uri="xsd/indirectorset.xsd"/>
+      <system systemId="urn:pubid:org.dita-community:module:xsd:indirectorsetGrp"
+              uri="xsd/indirectorsetGrp.xsd"/>
+      <system systemId="urn:pubid:org.dita-community:module:xsd:indirectorsetGrp"
+              uri="xsd/indirectorsetGrp.xsd"/>
       <system systemId="urn:pubid:org.dita-community:module:xsd:indirectorsetMod"
               uri="xsd/indirectorsetMod.xsd"/>
       <system systemId="urn:pubid:org.dita-community:module:xsd:indirectorsetMod"
@@ -17,6 +21,10 @@
            uri="xsd/indirectorset.xsd"/>
       <uri name="urn:pubid:org.dita-community:doctype:xsd:indirectorset"
            uri="xsd/indirectorset.xsd"/>
+      <uri name="urn:pubid:org.dita-community:module:xsd:indirectorsetGrp"
+           uri="xsd/indirectorsetGrp.xsd"/>
+      <uri name="urn:pubid:org.dita-community:module:xsd:indirectorsetGrp"
+           uri="xsd/indirectorsetGrp.xsd"/>
       <uri name="urn:pubid:org.dita-community:module:xsd:indirectorsetMod"
            uri="xsd/indirectorsetMod.xsd"/>
       <uri name="urn:pubid:org.dita-community:module:xsd:indirectorsetMod"

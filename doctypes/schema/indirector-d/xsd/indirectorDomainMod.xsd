@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Defines elements for use with the indirector topic type.     -->
+<!--Provides the indirect-xref-anchor element, which serves as a target-->
+<!--for indirect xrefs. The anchor may contain the link text to use for the-->
+<!--cross reference.                                             -->
+<!--Copyright (c) 2014 Eliot Kimber                              -->
+<!--                                                             -->
+<xs:schema xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:annotation>
+      <xs:appinfo>
+         <dita:domainsModule xmlns:dita="http://dita.oasis-open.org/architecture/2005/">(topic indirector-d)</dita:domainsModule>
+      </xs:appinfo>
+   </xs:annotation>
+   <xs:group name="indirect-xref-anchor">
+      <xs:sequence>
+         <xs:choice>
+            <xs:element ref="indirect-xref-anchor"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+
+   <xs:group name="indirector-d-ph">
+      <xs:choice>
+         <xs:element ref="indirect-xref-anchor"/>
+      </xs:choice>
+   </xs:group>
+   <xs:element name="indirect-xref-anchor">
+      <xs:annotation>
+         <xs:documentation>Serves as an anchor for indirect cross references.</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+         <xs:complexContent>
+            <xs:extension base="indirect-xref-anchor.class">
+               <xs:attribute ref="class" default="+ topic/ph indirector-d/indirect-xref-anchor "/>
+            </xs:extension>
+         </xs:complexContent>
+      </xs:complexType>
+   </xs:element>
+   <xs:complexType name="indirect-xref-anchor.class" mixed="true">
+      <xs:sequence>
+         <xs:group ref="indirect-xref-anchor.content"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="indirect-xref-anchor.attributes"/>
+   </xs:complexType>
+   <xs:group name="indirect-xref-anchor.content">
+      <xs:sequence>
+         <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:group ref="data"/>
+            <xs:group ref="data-about"/>
+         </xs:choice>
+      </xs:sequence>
+   </xs:group>
+   <xs:attributeGroup name="indirect-xref-anchor.attributes">
+      <xs:attribute name="id" use="required" type="xs:NMTOKEN"/>
+      <xs:attributeGroup ref="conref-atts"/>
+      <xs:attributeGroup ref="select-atts"/>
+      <xs:attributeGroup ref="localization-atts"/>
+      <xs:attribute name="outputclass" type="xs:string"/>
+      <xs:attributeGroup ref="global-atts"/>
+   </xs:attributeGroup>
+</xs:schema>
